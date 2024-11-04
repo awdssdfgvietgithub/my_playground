@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.test.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_MPHorizontalBarChartFragment"
+            app:destination="@id/MPHorizontalBarChartFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_advancedRecyclerViewFragment"
+            app:destination="@id/advancedRecyclerViewFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_recyclerViewWithFragmentTypeFragment"
+            app:destination="@id/recyclerViewWithFragmentTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MPHorizontalBarChartFragment"
+        android:name="com.example.test.features.mp_horizontal_bar_chart.MPHorizontalBarChartFragment"
+        android:label="fragment_m_p_horizontal_bar_chart"
+        tools:layout="@layout/fragment_m_p_horizontal_bar_chart" />
+    <fragment
+        android:id="@+id/advancedRecyclerViewFragment"
+        android:name="com.example.test.features.advanced_recycler_view.AdvancedRecyclerViewFragment"
+        android:label="fragment_advanced_recycler_view"
+        tools:layout="@layout/fragment_advanced_recycler_view" />
+    <fragment
+        android:id="@+id/recyclerViewWithFragmentTypeFragment"
+        android:name="com.example.test.features.recycler_view_with_fragment_type.RecyclerViewWithFragmentTypeFragment"
+        android:label="fragment_recycler_view_with_type"
+        tools:layout="@layout/fragment_recycler_view_with_type" />
+</navigation>
