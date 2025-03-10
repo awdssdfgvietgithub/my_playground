@@ -17,9 +17,6 @@
             android:id="@+id/action_homeFragment_to_advancedRecyclerViewFragment"
             app:destination="@id/advancedRecyclerViewFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_recyclerViewWithFragmentTypeFragment"
-            app:destination="@id/recyclerViewWithFragmentTypeFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_recyclerViewWithComplexItemFragment"
             app:destination="@id/recyclerViewWithComplexItemFragment" />
     </fragment>
