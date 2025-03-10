@@ -21,11 +21,6 @@ data class NavDTO(
                 Fragments.ADVANCED_RECYCLER_VIEW.fragmentName
             ),
             NavDTO(
-                R.id.action_homeFragment_to_recyclerViewWithFragmentTypeFragment,
-                Fragments.RECYCLER_VIEW_WITH_FRAGMENT_TYPE.fragmentTag,
-                Fragments.RECYCLER_VIEW_WITH_FRAGMENT_TYPE.fragmentName
-            ),
-            NavDTO(
                 R.id.action_homeFragment_to_recyclerViewWithComplexItemFragment,
                 Fragments.RECYCLER_VIEW_WITH_COMPLEX_ITEM.fragmentTag,
                 Fragments.RECYCLER_VIEW_WITH_COMPLEX_ITEM.fragmentName
