@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_homeFragment_to_recyclerViewWithFragmentTypeFragment"
             app:destination="@id/recyclerViewWithFragmentTypeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_recyclerViewWithComplexItemFragment"
+            app:destination="@id/recyclerViewWithComplexItemFragment" />
     </fragment>
     <fragment
         android:id="@+id/MPHorizontalBarChartFragment"
@@ -35,4 +38,9 @@
         android:name="com.example.test.features.recycler_view_with_fragment_type.RecyclerViewWithFragmentTypeFragment"
         android:label="fragment_recycler_view_with_type"
         tools:layout="@layout/fragment_recycler_view_with_type" />
+    <fragment
+        android:id="@+id/recyclerViewWithComplexItemFragment"
+        android:name="com.example.test.features.recycler_view_with_complex_item.RecyclerViewWithComplexItemFragment"
+        android:label="fragment_recycler_view_with_complex_item"
+        tools:layout="@layout/fragment_recycler_view_with_complex_item" />
 </navigation>
