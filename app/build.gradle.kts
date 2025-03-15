@@ -64,6 +64,9 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
 
+    // Coil
+    implementation(libs.coil)
+
     // Misc.
     implementation(libs.androidx.swiperefreshlayout)
     implementation(libs.shimmer)

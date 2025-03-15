@@ -2,26 +2,33 @@ package com.example.test.features.recycler_view_with_complex_item
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.test.R
 import com.example.test.databinding.FragmentRecyclerViewWithComplexItemBinding
-import com.example.test.databinding.ItemBasicBinding
-import com.example.test.databinding.ItemNavBinding
-import com.example.test.databinding.ItemSectionBinding
-import com.example.test.home.NavDTO
-import com.example.test.home.NavListAdapter
+import com.example.test.features.recycler_view_with_complex_item.utils.CategoryEnum
+import com.example.test.features.recycler_view_with_complex_item.utils.setMarginTop
+import com.example.test.utils.FetchingStatus
+import kotlinx.coroutines.launch
 
 class RecyclerViewWithComplexItemFragment : Fragment() {
     private var _binding: FragmentRecyclerViewWithComplexItemBinding? = null
     private val binding get() = _binding!!
+    private val viewModel: RecyclerViewWithComplexItemViewModel by viewModels()
 
-    private val mAdapter by lazy { SectionsAdapter() }
+    private val mAdapter by lazy {
+        SectionsAdapter(object : SectionsAdapter.OnSectionVisibleListener {
+            override fun onSectionVisible(queryStr: String) {
+                viewModel.fetchProductsBy(queryStr)
+            }
+        })
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,153 +40,127 @@ class RecyclerViewWithComplexItemFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { _, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            binding.toolBar.setMarginTop(systemBars.top)
+            WindowInsetsCompat.CONSUMED
+        }
         initViews()
+        subscribeObservers()
     }
+
+    private fun subscribeObservers() {
+        lifecycleScope.launch {
+            viewModel.clothesList.collect { uiState ->
+                handleState(uiState, CategoryEnum.CLOTHES.title)
+            }
+        }
+
+        lifecycleScope.launch {
+            viewModel.glassesList.collect { uiState ->
+                handleState(uiState, CategoryEnum.GLASSES.title)
+            }
+        }
+
+        lifecycleScope.launch {
+            viewModel.flowersList.collect { uiState ->
+                handleState(uiState, CategoryEnum.FLOWERS.title)
+            }
+        }
+
+        lifecycleScope.launch {
+            viewModel.sneakersList.collect { uiState ->
+                handleState(uiState, CategoryEnum.SNEAKERS.title)
+            }
+        }
+
+        lifecycleScope.launch {
+            viewModel.toolsList.collect { uiState ->
+                handleState(uiState, CategoryEnum.TOOLS.title)
+            }
+        }
+
+        lifecycleScope.launch {
+            viewModel.tablesList.collect { uiState ->
+                handleState(uiState, CategoryEnum.TABLE.title)
+            }
+        }
+
+        lifecycleScope.launch {
+            viewModel.chairsList.collect { uiState ->
+                handleState(uiState, CategoryEnum.CHAIR.title)
+            }
+        }
+
+        lifecycleScope.launch {
+            viewModel.tvList.collect { uiState ->
+                handleState(uiState, CategoryEnum.TV.title)
+            }
+        }
+
+        lifecycleScope.launch {
+            viewModel.bagsList.collect { uiState ->
+                handleState(uiState, CategoryEnum.BAG.title)
+            }
+        }
+
+        lifecycleScope.launch {
+            viewModel.jeansList.collect { uiState ->
+                handleState(uiState, CategoryEnum.JEANS.title)
+            }
+        }
+    }
+
+    private fun handleState(uiState: RecyclerViewWithComplexItemUIState, categoryTitle: String) {
+        when (uiState.fetchingStatus) {
+            FetchingStatus.INITIAL -> { /* No action needed */
+            }
+
+            FetchingStatus.LOADING -> {
+            }
+            FetchingStatus.SUCCESS -> {
+                val newData = uiState.data
+                Log.d("viet", "$categoryTitle: success - ${newData.size} items")
+                mAdapter.updateContent(categoryTitle, newData)
+            }
+
+            FetchingStatus.FAILURE -> Log.d("viet", "$categoryTitle: failure")
+        }
+    }
+
 
     private fun initViews() {
         binding.recyclerViewSections.adapter = mAdapter
         binding.recyclerViewSections.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerViewSections.setItemViewCacheSize(20)
+        binding.recyclerViewSections.recycledViewPool.setMaxRecycledViews(0, 20)
         mAdapter.setData(generateSections())
+
+        binding.swipeRefreshLayout.setOnRefreshListener {
+            mAdapter.setData(arrayListOf())
+            mAdapter.setData(generateSections())
+            binding.swipeRefreshLayout.isRefreshing = false
+        }
     }
 
     private fun generateSections(): ArrayList<SectionDTO> {
         val sections = arrayListOf<SectionDTO>()
-        for (i in 0..10) {
+        CategoryEnum.entries.forEach { category ->
             sections.add(
                 SectionDTO(
-                    tag = "section_$i",
-                    title = "Section $i",
+                    category = category,
                     viewMoreAction = { /* Handle view more action */ },
-                    items = arrayListOf("Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7"),
-                    recyclerViewLayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false),
-                    maxItemsCanView = 7
+                    items = arrayListOf(),
+                    recyclerViewLayoutManager = LinearLayoutManager(
+                        requireContext(),
+                        LinearLayoutManager.HORIZONTAL,
+                        false
+                    ),
+                    maxItemsCanView = 7,
+                    horAdapter = HorizontalAdapter()
                 )
             )
         }
         return sections
-    }
-}
-
-data class SectionDTO(
-    var tag: String,
-    var title: String,
-    var viewMoreAction: () -> Unit,
-    val items: ArrayList<String> = arrayListOf(),
-    var recyclerViewLayoutManager: RecyclerView.LayoutManager,
-    var maxItemsCanView: Int = 7,
-)
-
-class SectionsAdapter() : RecyclerView.Adapter<SectionsAdapter.SectionsViewHolder>() {
-    private var data = arrayListOf<SectionDTO>()
-
-    fun setData(newData: ArrayList<SectionDTO>) {
-        val diffCallback = MyDiffUtils(this.data, newData)
-        val diffResult = DiffUtil.calculateDiff(diffCallback)
-        this.data = newData
-        diffResult.dispatchUpdatesTo(this)
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SectionsViewHolder {
-        val binding = ItemSectionBinding.inflate(
-            LayoutInflater.from(parent.context), parent, false
-        )
-        return SectionsViewHolder(binding)
-    }
-
-    override fun getItemCount(): Int = data.size
-
-    override fun onBindViewHolder(holder: SectionsViewHolder, position: Int) {
-        val item = data[position]
-        Log.d("viet", "SectionsAdapter: $position - ${item.tag}")
-
-        holder.bind(item)
-        if (holder.adapterPosition % 2 == 0) {
-            holder.itemView.setBackgroundColor(holder.binding.root.context.getColor(R.color.color_6DE4BA))
-        } else {
-            holder.itemView.setBackgroundColor(holder.binding.root.context.getColor(R.color.color_EB9ABE))
-        }
-    }
-
-    inner class SectionsViewHolder(val binding: ItemSectionBinding) :
-        RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: SectionDTO) {
-            binding.textViewTitleSection.text = item.title
-            binding.imageButtonViewMore.setOnClickListener {
-                item.viewMoreAction()
-            }
-            val horAdapter = HorizontalAdapter()
-            binding.recyclerViewSection.adapter = HorizontalAdapter()
-            binding.recyclerViewSection.layoutManager = item.recyclerViewLayoutManager
-            horAdapter.setData(item.items)
-        }
-    }
-
-    inner class MyDiffUtils(
-        private val oldList: ArrayList<SectionDTO>,
-        private val newList: ArrayList<SectionDTO>
-    ) : DiffUtil.Callback() {
-        override fun getOldListSize(): Int = oldList.size
-
-        override fun getNewListSize(): Int = newList.size
-
-        override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-            return oldList[oldItemPosition].tag == newList[newItemPosition].tag
-        }
-
-        override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-            return oldList[oldItemPosition].tag == newList[newItemPosition].tag
-        }
-    }
-
-    inner class HorizontalAdapter() : RecyclerView.Adapter<HorizontalAdapter.ViewHolder>() {
-        private var data = arrayListOf<String>()
-
-        fun setData(newData: ArrayList<String>) {
-//            val diffCallback = MyDiffUtils(this.data, newData)
-//            val diffResult = DiffUtil.calculateDiff(diffCallback)
-//            this.data = newData
-//            diffResult.dispatchUpdatesTo(this)
-            this.data = newData
-            notifyDataSetChanged()
-        }
-
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-            val binding = ItemBasicBinding.inflate(
-                LayoutInflater.from(parent.context), parent, false
-            )
-            return ViewHolder(binding)
-        }
-
-        inner class ViewHolder(val binding: ItemBasicBinding) :
-            RecyclerView.ViewHolder(binding.root) {
-            fun bind(item: String) {
-                binding.textViewBasic.text = item
-            }
-        }
-
-        override fun getItemCount(): Int = this.data.size
-
-        override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-            val item = this.data[position]
-            Log.d("viet", "HorizontalAdapter: $position - ${item}")
-            holder.bind(item)
-        }
-
-        inner class MyDiffUtils(
-            private val oldList: ArrayList<String>,
-            private val newList: ArrayList<String>
-        ) : DiffUtil.Callback() {
-            override fun getOldListSize(): Int = oldList.size
-
-            override fun getNewListSize(): Int = newList.size
-
-            override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-                return oldList[oldItemPosition] == newList[newItemPosition]
-            }
-
-            override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-                return oldList[oldItemPosition] == newList[newItemPosition]
-            }
-        }
     }
 }

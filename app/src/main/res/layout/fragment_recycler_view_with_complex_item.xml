@@ -9,7 +9,8 @@
     <RelativeLayout
         android:id="@+id/tool_bar"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="50dp"
+        android:background="@color/white">
 
         <ImageButton
             android:id="@+id/image_button_back"
@@ -37,11 +38,15 @@
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#92E4DBDB">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_sections"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingTop="24dp"
+            tools:listitem="@layout/item_section" />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </LinearLayout>
