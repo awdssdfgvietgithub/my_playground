@@ -9,7 +9,7 @@
         android:id="@+id/homeFragment"
         android:name="com.example.test.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_MPHorizontalBarChartFragment"
             app:destination="@id/MPHorizontalBarChartFragment" />
@@ -34,5 +34,18 @@
         android:id="@+id/recyclerViewWithComplexItemFragment"
         android:name="com.example.test.features.recycler_view_with_complex_item.RecyclerViewWithComplexItemFragment"
         android:label="fragment_recycler_view_with_complex_item"
-        tools:layout="@layout/fragment_recycler_view_with_complex_item" />
+        tools:layout="@layout/fragment_recycler_view_with_complex_item">
+        <action
+            android:id="@+id/action_recyclerViewWithComplexItemFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.example.test.features.recycler_view_with_complex_item.ProductDetailsFragment"
+        android:label="fragment_product_details"
+        tools:layout="@layout/fragment_product_details">
+        <argument
+            android:name="productData"
+            app:argType="com.example.test.features.recycler_view_with_complex_item.ProductDTO" />
+    </fragment>
 </navigation>

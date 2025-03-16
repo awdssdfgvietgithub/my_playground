@@ -1,9 +1,9 @@
 package com.example.test.features.recycler_view_with_complex_item
 
 import android.annotation.SuppressLint
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -15,6 +15,7 @@ import com.example.test.databinding.ItemSectionBinding
 class SectionsAdapter(private val listener: OnSectionVisibleListener) :
     RecyclerView.Adapter<SectionsAdapter.SectionsViewHolder>() {
     private var data = arrayListOf<SectionDTO>()
+    var onProductClickListener: ((title: String, productDTO: ProductDTO, imageView: ImageView) -> Unit)? = null
 
     interface OnSectionVisibleListener {
         fun onSectionVisible(tag: String)
@@ -29,13 +30,11 @@ class SectionsAdapter(private val listener: OnSectionVisibleListener) :
         diffResult.dispatchUpdatesTo(this)
     }
 
-    fun updateContent(title: String, newItems: List<ProductsResponse.Product>) {
+    fun updateContent(title: String, newItems: List<ProductDTO>) {
         val index = data.indexOfFirst { it.category.title == title }
-        Log.d("viet", "updateContent for title: $title, found index: $index")
 
         if (index != -1) {
             val section = data[index]
-            Log.d("viet", "New items: $newItems")
 
             if (newItems.isNotEmpty()) section.horAdapter.setData(ArrayList(newItems))
         }
@@ -52,7 +51,6 @@ class SectionsAdapter(private val listener: OnSectionVisibleListener) :
 
     override fun onBindViewHolder(holder: SectionsViewHolder, position: Int) {
         val item = data[position]
-        Log.d("viet", "SectionsAdapter: $position - ${item.category.queryStr}")
 
         holder.bind(item)
 
@@ -70,6 +68,9 @@ class SectionsAdapter(private val listener: OnSectionVisibleListener) :
             }
             binding.recyclerViewSection.adapter = item.horAdapter
             item.horAdapter.showShimmerEffect()
+            item.horAdapter.onItemClickListener = { product, imageView ->
+                onProductClickListener?.invoke(item.category.title, product, imageView)
+            }
         }
     }
 
@@ -91,15 +92,16 @@ class SectionsAdapter(private val listener: OnSectionVisibleListener) :
     }
 }
 
-class HorizontalAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-    private var data: ArrayList<ProductsResponse.Product> = arrayListOf()
+class HorizontalAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+    private var data: ArrayList<ProductDTO> = arrayListOf()
     private var isLoading: Boolean = true
+    var onItemClickListener: ((ProductDTO, imageView: ImageView) -> Unit)? = null
 
     enum class ViewType(val type: Int) {
         SHIMMER(0), PRODUCT(1)
     }
 
-    fun setData(newData: ArrayList<ProductsResponse.Product>) {
+    fun setData(newData: ArrayList<ProductDTO>) {
         isLoading = false
         val diffCallback = MyDiffUtils(this.data, newData)
         val diffResult = DiffUtil.calculateDiff(diffCallback)
@@ -107,7 +109,7 @@ class HorizontalAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         diffResult.dispatchUpdatesTo(this)
     }
 
-    private fun setDataShimmer(newData: ArrayList<ProductsResponse.Product>) {
+    private fun setDataShimmer(newData: ArrayList<ProductDTO>) {
         val diffCallback = MyDiffUtils(this.data, newData)
         val diffResult = DiffUtil.calculateDiff(diffCallback)
         this.data = newData
@@ -115,7 +117,7 @@ class HorizontalAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     fun showShimmerEffect() {
-        val shimmerData = ArrayList<ProductsResponse.Product>().apply { addAll(List(3) { ProductsResponse.Product() }) }
+        val shimmerData = ArrayList<ProductDTO>().apply { addAll(List(3) { ProductDTO() }) }
         setDataShimmer(shimmerData)
     }
 
@@ -141,11 +143,16 @@ class HorizontalAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         }
     }
 
-    inner class ProductViewHolder(private val binding: ItemBasicBinding) :
+    inner class ProductViewHolder(val binding: ItemBasicBinding) :
         RecyclerView.ViewHolder(binding.root) {
         @SuppressLint("SetTextI18n")
-        fun bind(item: ProductsResponse.Product) = with(binding) {
+        fun bind(item: ProductDTO) = with(binding) {
             imageProduct.load(item.thumbnailUrl) { crossfade(true) }
+            imageProduct.transitionName = item.thumbnailUrl
+            binding.root.setOnClickListener {
+                onItemClickListener?.invoke(item, imageProduct)
+            }
+
             textViewProductName.text = item.name ?: "-"
             textViewRate.text = item.ratingAverage?.toString() ?: "0"
             textViewQuantitySold.text = item.quantitySold?.text ?: "0"
@@ -169,8 +176,8 @@ class HorizontalAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     inner class MyDiffUtils(
-        private val oldList: ArrayList<ProductsResponse.Product>,
-        private val newList: ArrayList<ProductsResponse.Product>
+        private val oldList: ArrayList<ProductDTO>,
+        private val newList: ArrayList<ProductDTO>
     ) : DiffUtil.Callback() {
         override fun getOldListSize(): Int = oldList.size
 

@@ -4,6 +4,6 @@ import com.example.test.utils.FetchingStatus
 
 data class RecyclerViewWithComplexItemUIState(
     val fetchingStatus: FetchingStatus = FetchingStatus.INITIAL,
-    val data: List<ProductsResponse.Product> = arrayListOf(),
+    val data: List<ProductDTO> = arrayListOf(),
     val msg: String = ""
 )

@@ -59,7 +59,7 @@ class RecyclerViewWithComplexItemViewModel : ViewModel() {
         stateFlow: MutableStateFlow<RecyclerViewWithComplexItemUIState>
     ) {
         stateFlow.update { it.copy(fetchingStatus = LOADING) }
-        delay(2000)
+//        delay(2000)
 
         val response =
             ApiClient.apiServiceTIKI.fetchProducts("7", "top_seller", "1", category.queryStr)

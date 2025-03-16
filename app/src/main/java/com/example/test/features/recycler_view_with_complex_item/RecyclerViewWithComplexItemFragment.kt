@@ -10,7 +10,11 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.NavDirections
+import androidx.navigation.fragment.FragmentNavigatorExtras
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.test.R
 import com.example.test.databinding.FragmentRecyclerViewWithComplexItemBinding
 import com.example.test.features.recycler_view_with_complex_item.utils.CategoryEnum
 import com.example.test.features.recycler_view_with_complex_item.utils.setMarginTop
@@ -128,18 +132,33 @@ class RecyclerViewWithComplexItemFragment : Fragment() {
         }
     }
 
-
     private fun initViews() {
         binding.recyclerViewSections.adapter = mAdapter
         binding.recyclerViewSections.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerViewSections.setItemViewCacheSize(20)
         binding.recyclerViewSections.recycledViewPool.setMaxRecycledViews(0, 20)
-        mAdapter.setData(generateSections())
 
         binding.swipeRefreshLayout.setOnRefreshListener {
             mAdapter.setData(arrayListOf())
             mAdapter.setData(generateSections())
             binding.swipeRefreshLayout.isRefreshing = false
+        }
+
+        mAdapter.onProductClickListener = { title, product, imageView ->
+            Log.d("viet", "title $title")
+            Log.d("viet", "product ${product.name}")
+            Log.d("viet", "imageView $imageView")
+
+            val navController = findNavController()
+
+            val action = RecyclerViewWithComplexItemFragmentDirections.actionRecyclerViewWithComplexItemFragmentToProductDetailsFragment(product)
+
+            if (!product.thumbnailUrl.isNullOrEmpty()) {
+                val extras = FragmentNavigatorExtras(
+                    imageView to product.thumbnailUrl
+                )
+                navController.navigate(action, extras)
+            }
         }
     }
 
@@ -162,5 +181,15 @@ class RecyclerViewWithComplexItemFragment : Fragment() {
             )
         }
         return sections
+    }
+
+    override fun onResume() {
+        super.onResume()
+        mAdapter.setData(generateSections())
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

@@ -8,3 +8,9 @@ fun View.setMarginTop(marginTop: Int) {
     menuLayoutParams.setMargins(0, marginTop, 0, 0)
     this.layoutParams = menuLayoutParams
 }
+
+fun View.setMarginBottom(marginBottom: Int) {
+    val menuLayoutParams = this.layoutParams as ViewGroup.MarginLayoutParams
+    menuLayoutParams.setMargins(0, 0, 0, marginBottom)
+    this.layoutParams = menuLayoutParams
+}
