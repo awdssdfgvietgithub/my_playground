@@ -24,6 +24,16 @@ data class NavDTO(
                 R.id.action_homeFragment_to_recyclerViewWithComplexItemFragment,
                 Fragments.RECYCLER_VIEW_WITH_COMPLEX_ITEM.fragmentTag,
                 Fragments.RECYCLER_VIEW_WITH_COMPLEX_ITEM.fragmentName
+            ),
+            NavDTO(
+                R.id.action_homeFragment_to_livenessFragment,
+                Fragments.LIVENESS.fragmentTag,
+                Fragments.LIVENESS.fragmentName
+            ),
+            NavDTO(
+                R.id.action_homeFragment_to_stringErrorsMappingUIFragment,
+                Fragments.STRING_ERRORS_MAPPING_UI.fragmentTag,
+                Fragments.STRING_ERRORS_MAPPING_UI.fragmentName
             )
         )
     }

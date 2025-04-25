@@ -19,6 +19,12 @@
         <action
             android:id="@+id/action_homeFragment_to_recyclerViewWithComplexItemFragment"
             app:destination="@id/recyclerViewWithComplexItemFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_livenessFragment"
+            app:destination="@id/livenessFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_stringErrorsMappingUIFragment"
+            app:destination="@id/stringErrorsMappingUIFragment" />
     </fragment>
     <fragment
         android:id="@+id/MPHorizontalBarChartFragment"
@@ -48,4 +54,14 @@
             android:name="productData"
             app:argType="com.example.test.features.recycler_view_with_complex_item.ProductDTO" />
     </fragment>
+    <fragment
+        android:id="@+id/livenessFragment"
+        android:name="com.example.test.features.liveness.LivenessFragment"
+        android:label="fragment_liveness"
+        tools:layout="@layout/fragment_liveness" />
+    <fragment
+        android:id="@+id/stringErrorsMappingUIFragment"
+        android:name="com.example.test.features.string_errors_mapping_ui.StringErrorsMappingUIFragment"
+        android:label="fragment_string_errors_mapping_u_i"
+        tools:layout="@layout/fragment_string_errors_mapping_u_i" />
 </navigation>

@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="fos_uf_oc_order_type">
+        <item>Tất cả</item>
+        <item>Bán</item>
+        <item>Mua</item>
+        <item>Hủy Bán</item>
+        <item>Hủy Mua</item>
+        <item>Sửa Bán</item>
+        <item>Sửa Mua</item>
+    </string-array>
+
+    <string-array name="number_units_tvbsc">
+        <item> </item>
+        <item>K</item>
+        <item>Tr</item>
+        <item>Tỷ</item>
+    </string-array>
+
+    <string-array name="number_units_tvs">
+        <item> </item>
+        <item>Ng</item>
+        <item>Tr</item>
+        <item>Tỷ</item>
+    </string-array>
+
+    <string-array name="fos_uf_oc_channel">
+        <item>Phiếu Lệnh</item>
+        <item>Contact Center</item>
+        <item>Online Trading</item>
+    </string-array>
+
+    <string name="symbol_status_02_long">Chứng khoán được phép giao dịch</string>
+    <string name="symbol_status_60_long">Chứng khoán ngoài room</string>
+    <string name="symbol_status_68_long">Chứng khoán lưu ký không tính vào room, có tính sức mua</string>
+    <string name="symbol_status_03_long">Chứng khoán chờ lưu ký tự do chuyển nhượng</string>
+    <string name="symbol_status_05_long">Chứng khoán chờ lưu ký hạn chế chuyển nhượng</string>
+    <string name="symbol_status_06_long">Chứng khoán chờ lưu ký tự do chuyển nhượng (Chờ giao dịch)</string>
+    <string name="symbol_status_07_long">Chứng khoán chờ giao dịch tự do chuyển nhượng</string>
+    <string name="symbol_status_08_long">Chứng khoán chờ giao dịch hạn chế chuyển nhượng</string>
+    <string name="symbol_status_09_long">Chứng khoán chờ lưu ký hạn chế chuyển nhượng (Chờ giao dịch)</string>
+    <string name="symbol_status_49_long">Chứng khoán hạn chế chuyển nhượng</string>
+    <string name="mts_empty_status">(00)</string>
+
+    <string name="text_processing">Đang xử lý</string>
+    <string name="MT_Status_None">Đang xử lý</string>
+    <string name="MT_Status_Waiting">Đang xử lý</string>
+    <string name="MT_Status_Processing">Đang xử lý</string>
+    <string name="MT_Status_Finished">Hoàn tất</string>
+    <string name="MT_Status_Rejected">Từ chối</string>
+    <string name="MT_Confirm">Đã xác nhận</string>
+    <string name="MT_Waiting_Confirm">Chờ xác nhận</string>
+    <string name="MT_Waiting_At_Bank">Chờ tại ngân hàng</string>
+    <string name="MT_Processing_At_Bank_By_Staff">Đang xử lý</string>
+    <string name="MT_First_Approval">Phê duyệt lần 1 trước khi gọi sang ngân hàng</string>
+    <string name="MT_Status_Finished_At_Bank">Hoàn tất</string>
+    <string name="MT_Status_Rejected_At_Bank">Từ chối</string>
+    <string name="MT_Second_Approval">Phê duyệt lần 2 trước khi gọi sang ngân hàng</string>
+    <string name="MT_Canceled">Đã hủy</string>
+    <string name="MT_Status_other">Đang xử lý</string>
+    <string name="mt_send_to_bank">Đang xử lý</string>
+    <string name="mt_unconfirmed">Chờ xác nhận</string>
+    <string name="mt_error_at_bank">Bị lỗi tại bank</string>
+    <string name="mt_wait_to_approve">Chờ duyệt (hoặc chưa duyệt)</string>
+    <string name="mt_processed">Đã hạch toán</string>
+    <string name="mt_cancelling">Đang chờ hủy</string>
+    <string name="mt_editing">Đang sửa đổi</string>
+    <string name="mt_approved">Đã duyệt</string>
+    <string name="mt_liquidating">Đang thanh lý</string>
+    <string name="mt_liquidated">Đã thanh lý</string>
+    <string name="mt_approving">Đang duyệt</string>
+    <string name="mt_wait_to_receive">Chưa về</string>
+    <string name="mt_received">Đã về</string>
+    <string name="mt_edited">Đã sửa đổi</string>
+    <string name="mt_reject_approve">Từ chối duyệt</string>
+    <string name="mt_wait_to_implement">Chưa thực hiện</string>
+    <string name="mt_reject_by_customer">Từ chối</string>
+    <string name="mt_has_not_registered">Chưa đăng ký</string>
+    <string name="mt_expired_registration">Hết hạn đăng ký</string>
+    <string name="mt_register_successfully">Đăng ký thành công</string>
+    <string name="mt_confirmcode_expired">Mã xác nhận đã hết hạn</string>
+    <string name="mt_failed_withdraw_from_core">Lỗi rút tiền tại core</string>
+    <string name="mt_failed_deposit_to_core">Lỗi nộp tiền vào core</string>
+    <string name="mt_pending_in_queue">Vào queue</string>
+    <string name="mt_error_process">Lỗi xử lý</string>
+    <string name="mt_waiting_confirmed_otp">Chờ xác nhận OTP</string>
+    <string name="mt_wait_to_close">Chờ đóng</string>
+    <string name="mt_closed">Đã đóng</string>
+    <string name="mt_lock_registration">Khóa đăng ký</string>
+    <string name="mt_send_to_core_fail">Call CashAPI Fail</string>
+    <string name="mt_completed">Hoàn tất</string>
+    <string name="mt_error">Lỗi</string>
+    <string name="mt_refunded">Đã hoàn ứng</string>
+
+    <string name="LossPin_SuccessChange">Xác nhận thành công! Mã PIN mới đã được gửi vào email/SMS của Quý khách.</string>
+    <string name="cancel">Hủy</string>
+    <string name="MessageResetPassword">Có vẻ như quý khách đang gặp khó khăn với mật khẩu đăng nhập. Quý khách có muốn khởi tạo lại mật khẩu?</string>
+    <string name="MessageWaitResetPassword">Có vẻ như quý khách đang gặp khó khăn với mật khẩu đăng nhập. Quý khách vui lòng đợi %1$d giây sau để gởi lại yêu cầu. \nThời gian chờ: %2$d giây</string>
+    <string name="mts_edit">Sửa</string>
+    <string name="mts_string_account_margin_update_success">Cập nhật tài khoản mặc định thành công.</string>
+    <string name="MarketCloseStatus">Đóng cửa</string>
+    <string name="MarketWaitingStatus">WAITING</string>
+    <string name="MarketNightStatus">NIGHT</string>
+    <string name="MarketOpenStatus">Mở cửa</string>
+    <string name="BreakingTime">Giờ nghỉ</string>
+    <string name="MarketOpenStatusPutThrought">GDTT</string>
+    <string name="MarketOpenStatusPutThroughtWithPLO">GDTT và PLO</string>
+    <string name="MarketOpenStatusSession1">Phiên ATO</string>
+    <string name="MarketOpenStatusSession2">Phiên KLLT</string>
+    <string name="MarketOpenStatusSessionKLLT">Khớp lệnh liên tục</string>
+    <string name="MarketOpenStatusSession3">Phiên ATC</string>
+    <string name="TradingStatus_Close">Thị trường đóng cửa. Không cho phép đặt lệnh.</string>
+    <string name="TradingStatus_BreakingTime">Chuyển sang giờ nghỉ. Không cho phép đặt lệnh.</string>
+    <string name="TradingStatus_BreakingTime_Pre">Chuẩn bị chuyển sang giờ nghỉ. Tạm ngưng nhận lệnh.</string>
+    <string name="TradingStatus_BreakingTime_Enable">Thị trường đang giờ nghỉ. Cho phép đặt lệnh.</string>
+    <string name="TradingStatus_Close_Pre">Chuẩn bị đóng cửa. Tạm ngưng nhận lệnh.</string>
+    <string name="TradingStatus_Night">Sẵn sàng nhận lệnh trước ngày.</string>
+    <string name="TradingStatus_NotAllowingKeyOrder">Không cho phép đặt lệnh.</string>
+    <string name="TradingStatus_NightOrder">Sẵn sàng nhận lệnh trước giờ</string>
+    <string name="TradingStatus_Open">Cho phép đặt lệnh.</string>
+    <string name="TradingStatus_PreClose">Cho phép đặt lệnh.</string>
+    <string name="TradingStatus_PreOpen">Cho phép đặt lệnh.</string>
+    <string name="TradingStatus_PutThrough">Chuyển sang GDTT. Không cho phép đặt lệnh.</string>
+    <string name="TradingStatus_Ready">Sẵn sàng nhận lệnh.</string>
+    <string name="TradingStatus_Waiting">Hệ thống đang kết nối. Tạm ngưng nhận lệnh.</string>
+    <string name="CashTransferSenderPay">Phí do người chuyển trả</string>
+    <string name="CashTransferRecipientsPay">Phí do người nhận trả</string>
+    <string name="TheFeePrescribedByTheBanking">Phí theo QĐ của ngân hàng.</string>
+    <string name="TO_OrderInfo_StatusCanceledTooltip">Lệnh đã được hủy</string>
+    <string name="TO_OrderInfo_StatusRejectedTooltip">Lệnh bị từ chối</string>
+    <string name="TO_OrderInfo_StatusExpiredTooltip">Lệnh bị hết hiệu lực</string>
+    <string name="TO_OrderInfo_StatusNeedToBeApprovedTooltip">Lệnh chờ duyệt</string>
+    <string name="TO_OrderInfo_StatusWaitingConfirmTooltip">Lệnh Care chờ xác nhận</string>
+    <string name="TO_OrderInfo_StatusAcceptedTooltip">Lệnh care đã được nhận</string>
+    <string name="TO_OrderInfo_StatusCancelling">Chờ hủy</string>
+    <string name="TO_OrderInfo_StatusCancelling_bvsc">Đang hủy</string>
+    <string name="TO_OrderInfo_StatusPendingToolTip_SC">Lệnh đang chờ khớp tại CTCK</string>
+    <string name="TO_OrderInfo_StatusPendingToolTip_EX">Lệnh đang chờ khớp tại sàn.</string>
+    <string name="TO_OrderInfo_StatusCancellingAtCenterTooltip">Lệnh đang chờ hủy tại sàn.</string>
+    <string name="TO_OrderInfo_StatusCancellingAtTCSCTooltip">Lệnh đang chờ hủy tại CTCK.</string>
+    <string name="TO_OrderInfo_StatusMatchedTooltip">Lệnh đã khớp hoàn toàn</string>
+    <string name="TO_OrderInfo_StatusPending">Đang chờ</string>
+    <string name="TO_OrderInfo_StatusPending_bvsc">Chờ gửi</string>
+    <string name="TO_OrderInfo_StatusPendingCancel">Đang chờ hủy</string>
+    <string name="TO_OrderInfo_StatusEditing">Đang sửa</string>
+    <string name="TO_OrderInfo_StatusEditing_bvsc">Đang sửa</string>
+    <string name="TO_OrderInfo_StatusChanged">Đã sửa</string>
+    <string name="TO_OrderInfo_StatusWaitToActive">Chờ kích hoạt</string>
+    <string name="TO_OrderInfo_StatusWaitToActiveTooltip">Lệnh đang chờ kích hoạt</string>
+    <string name="COO_ActiveStatus">Chờ kích hoạt</string>
+    <string name="COO_InActiveStatus">Chưa kích hoạt</string>
+    <string name="TO_OrderInfo_Status_Conditional_Order_Active">Đang chờ thỏa điều kiện</string>
+    <string name="TO_OrderInfo_Status_Conditional_Order_InActive">Lệnh ĐK chờ kiểm tra</string>
+    <string name="TO_OrderInfo_StatusRejectCancel_Matching_Tooltip">Hủy lệnh khớp bị từ chối</string>
+    <string name="TO_OrderInfo_StatusPendingEdit">Đang chờ sửa</string>
+
+    <string name="TO_OrderInfo_StatusCancellingTooltip">Lệnh đang hủy</string>
+    <string name="TO_OrderInfo_StatusExpiredGTDTooltip">Đã hết hạn (đối với lệnh GTD)</string>
+    <string name="TO_OrderInfo_StatusNeedToBeApproved">Chờ duyệt</string>
+    <string name="TO_OrderInfo_StatusApproving">Approving</string>
+    <string name="TO_OrderInfo_StatusApprovingTooltip">Order is approving</string>
+    <string name="TO_OrderInfo_StatusMatched">Hoàn tất</string>
+    <string name="TO_OrderInfo_StatusMatched_bvsc">Khớp hết</string>
+    <string name="TO_OrderInfo_StatusPendingTCSCTooltip">Lệnh đang chờ tại CTCK</string>
+    <string name="TO_OrderInfo_StatusPendingTCSCTooltipFOS">Lệnh đang chờ khớp</string>
+    <string name="TO_OrderInfo_StatusRejectCancelTooltip">Lệnh hủy bị từ chối</string>
+    <string name="TO_OrderInfo_StatusChangingTooltip">Lệnh đang sửa</string>
+    <string name="TO_OrderInfo_StatusChangedTooltip">Lệnh đã sửa</string>
+    <string name="TO_OrderInfo_StatusChangeReiectedTooltip">Lệnh sửa bị từ chối</string>
+    <string name="TO_OrderInfo_StatusRejected">Bị từ chối</string>
+    <string name="TO_OrderInfo_StatusExpired">Hết hiệu lực</string>
+    <string name="TO_OrderInfo_StatusExpiredGTD">Hết hạn</string>
+    <string name="TO_OrderInfo_StatusRejectedAtTCSCTooltipFos">Lệnh bị từ chối</string>
+    <string name="TO_OrderInfo_StatusSemiMatched">Khớp 1 phần</string>
+    <string name="TO_OrderInfo_StatusSemiMatchedTooltip">Lệnh đã khớp 1 phần</string>
+    <string name="TO_OrderInfo_StatusSemiMatched_Cancel">Khớp 1 phần</string>
+    <string name="TO_OrderInfo_StatusSemiMatched_Cancel_FOS">Khớp/Hủy 1 phần</string>
+    <string name="TO_OrderInfo_StatusCanceled">Đã hủy</string>
+    <string name="TO_OrderInfo_StatusSemiMatched_CancelTooltip">Lệnh đã khớp 1 phần và hủy phần còn lại</string>
+    <string name="TO_OrderInfo_StatusSend">Đã chuyển</string>
+    <string name="TO_OrderInfo_StatusSent">Đã chuyển</string>
+    <string name="TO_OrderInfo_Status_Need_To_Be_Approved_Tooltip">Lệnh chờ duyệt</string>
+    <string name="TO_OrderInfo_StatusChangingAtTCSCTooltip">Lệnh đang sửa</string>
+    <!-- start - new core fss  -->
+    <string name="TO_OrderInfo_StatusOpen">Mở</string>
+    <string name="TO_OrderInfo_StatusSentV2">Đã gửi</string>
+    <string name="TO_OrderInfo_StatusCancellingV2">Đang hủy</string>
+    <string name="TO_OrderInfo_StatusFinished">Hoàn thành</string>
+    <string name="TO_OrderInfo_StatusAmended">Đã sửa</string>
+    <string name="TO_OrderInfo_StatusWaitingConfirm">Chờ xác nhận</string>
+    <string name="TO_OrderInfo_StatusAccepted">Đã nhận</string>
+    <string name="TO_OrderInfo_StatusWaitingProccess">Chờ xử lý</string>
+    <string name="TO_OrderInfo_StatusCancelled">Hủy bỏ</string>
+    <string name="TO_OrderInfo_StatusWaitingDepositBank">Chờ ký quỹ ngân hàng</string>
+    <string name="TO_OrderInfo_StatusWaitingToSend">Chờ gửi</string>
+    <string name="TO_OrderInfo_StatusActive">Hoạt động</string>
+    <string name="TO_OrderInfo_StatusProccessing">Đang xử lý</string>
+    <string name="TO_OrderInfo_StatusEWInactiveByInvalidPrice">Chưa gửi do không nằm trong khoảng giá</string>
+    <string name="TO_OrderInfo_StatusEOExpired">Hết hạn</string>
+    <string name="TO_OrderInfo_StatusEAWaitingForReactive">Chờ kích hoạt lại</string>
+    <string name="TO_OrderInfo_StatusMatchedV2">Khớp hết</string>
+    <string name="TO_OrderInfo_StatusCompleted">Đã khớp</string>
+    <!-- new core fss - end  -->
+    <string name="DealStatus_Approved">Chấp nhận</string>
+    <string name="DealStatus_CancelDeal">Đã hủy</string>
+    <string name="DealStatus_Canceled">Đã hủy</string>
+    <string name="DealStatus_Change">Thay đổi</string>
+    <string name="DealStatus_Submitted">Đã chuyển</string>
+    <string name="DealStatus_Matched">Hoàn tất</string>
+    <string name="DealStatus_Open">Vừa đặt</string>
+    <string name="DealStatus_Other">Khác</string>
+    <string name="DealStatus_Pending">Đang chờ</string>
+    <string name="DealStatus_Rejected">Bị từ chối</string>
+    <string name="DealStatus_SemiMatched">Khớp 1 phần</string>
+    <string name="COO_OderInfo_Status_CANCELED">Đã hủy</string>
+    <string name="COO_OderInfo_Status_MATCHED">Hoàn tất</string>
+    <string name="COO_OderInfo_Status_OPEN">Đang chờ thỏa ĐK</string>
+    <string name="COO_OderInfo_Status_PMPC">Khớp 1 phần</string>
+    <string name="COO_OderInfo_Status_TRIGGERED">Đã gửi lệnh vào sàn</string>
+    <string name="COO_OderInfo_Status_WFBT">Chờ gửi lệnh vào sàn</string>
+    <string name="COO_OderInfo_Status_WFFM">Khớp 1 phần / Chờ khớp đủ</string>
+    <string name="COO_OderInfo_CooType_GTD">GTD</string>
+    <string name="COO_OderInfo_CooType_PRO">PRO</string>
+    <string name="COO_OderInfo_CooType_ST">ST</string>
+    <string name="COO_OderInfo_CooType_TS">TS</string>
+    <string name="GTD_VolumnMatched">Khớp đủ khối lượng đã đặt</string>
+
+    <string name="PriceBoard_SortDefault">Mặc định</string>
+    <string name="PriceBoard_SortMostActiveValue">Theo GT giao dịch lớn nhất</string>
+    <string name="PriceBoard_SortMostActiveVolume">Theo KL giao dịch nhiều nhất</string>
+    <string name="PriceBoard_SortTopGainers">Theo giá tăng nhiều nhất</string>
+    <string name="PriceBoard_SortTopGainersPercent">Theo (%) giá tăng nhiều nhất</string>
+    <string name="PriceBoard_SortTopLosers">Theo giá giảm nhiều nhất</string>
+    <string name="PriceBoard_SortTopLosersPercent">Theo (%) giá giảm nhiều nhất</string>
+    <string name="PriceBoard_SortUnChanged">Giao dịch không đổi</string>
+    <string name="PriceBoard_SortForeignBuy">Top nước ngoài mua</string>
+    <string name="PriceBoard_SortForeignSell">Top nước ngoài bán</string>
+
+    <string name="PriceBoard_FavAll">Tất cả cổ phiếu</string>
+    <string name="PriceBoard_FavFavorite">Nhóm CP yêu thích</string>
+    <string name="PriceBoard_FavCategory">Ngành</string>
+    <string name="PriceBoard_FavMarkets">Thị trường</string>
+    <string name="PriceBoard_HNX">HNX</string>
+    <string name="PriceBoard_HOSE">HSX</string>
+    <string name="PriceBoard_NEW_HOSE">NEW HOSE</string>
+    <string name="PriceBoard_UPCOM">UPCOM</string>
+    <string name="PriceBoard_ETF">ETF</string>
+    <string name="PriceBoard_HNX_OddLot">Lô lẻ HNX</string>
+    <string name="PriceBoard_OddLot">Lô lẻ</string>
+    <string name="PriceBoard_HSX_OddLot">Lô lẻ HSX</string>
+    <string name="PriceBoard_UPCOME_OddLot">Lô lẻ Upcom</string>
+    <string name="PriceBoard_warrants">Chứng quyền</string>
+    <string name="PriceBoard_VN30">VN30</string>
+    <string name="PriceBoard_VNX50">VNX50</string>
+    <string name="PriceBoard_VNXALL">VNX-ALL</string>
+    <string name="PriceBoard_HNX30">HNX30</string>
+    <string name="PriceBoard_Derivatives">Phái sinh</string>
+    <string name="RejectOrderReasonSuccess">Đã nhận lệnh của quý khách. Xin vui lòng xem trạng thái lệnh.</string>
+    <string name="order_success">Đã nhận lệnh của quý khách.</string>
+
+    <string name="mt_same_bank_name">Rút tiền bằng CMND</string>
+    <string name="mt_register_bank">Chuyển khoản sang NH đã ĐK trước</string>
+    <string name="mt_internal">Chuyển tiền để thanh toán</string>
+    <string name="mt_bank">Chuyển khoản sang NH đã ĐK trước</string>
+    <string name="mt_internal_same_branch">Un-name</string>
+    <string name="mt_internal_diff_branch">Un-name</string>
+    <string name="mt_internal_cash_margin">Chuyển sức mua để giao dịch</string>
+    <string name="mt_cc_to_internal">Rút Ký Quỹ GD CKPS Tại VSD</string>
+    <string name="mt_internal_to_ccp">Nộp Ký Quỹ GD CKPS Tại VSD</string>
+    <string name="mt_withdraw_at_office">Rút tiền tại quầy</string>
+    <string name="mt_transfer_to_unregistered">Chuyển tiền sang NH chưa đăng ký trước</string>
+    <string name="mt_margin_withdraw">Rút tiền</string>
+
+    <string name="mt_margin_same_bank_name">Rút tiền bằng CMND</string>
+    <string name="mt_margin_register_bank">Chuyển khoản sang NH đã ĐK trước</string>
+    <string name="mt_margin_internal">Chuyển tiền để thanh toán</string>
+    <string name="mt_margin_internal_hsc">Chuyển nội bộ</string>
+    <string name="mt_margin_bank">Chuyển khoản sang NH đã ĐK trước</string>
+    <string name="mt_margin_internal_same_branch">Un-name</string>
+    <string name="mt_margin_internal_diff_branch">Un-name</string>
+    <string name="mt_margin_internal_cash_margin">Chuyển sức mua để giao dịch</string>
+    <string name="mt_margin_withdraw_at_office">Rút tiền tại quầy</string>
+    <string name="mt_margin_transfer_to_unregistered">Chuyển tiền sang NH chưa đăng ký trước</string>
+
+    <string name="fos_mt_internal_type">Chuyển tiền tới TK GD CK tại CTCK (Thực hiện qua NH)</string>
+    <string name="fos_mt_withdraw_vsd_type">Rút ký quỹ GD CKPS từ VSD</string>
+    <string name="fos_cash_transfer_same_bank_acc_title">Chuyển khoản ngân hàng cùng tên</string>
+    <string name="fos_cash_transfer_bank_acc_registered_title">Chuyển tiền ra ngân hàng đăng ký trước</string>
+
+    <string name="mts_status_all">Tất cả</string>
+    <string name="mts_status_rejected_short">Từ chối</string>
+    <string name="mts_status_canceled">Đã hủy</string>
+    <string name="mts_status_matched">Đã khớp</string>
+    <string name="mts_status_pending">Chờ xử lý</string>
+    <string name="mts_status_pending_short">Chờ khớp</string>
+    <string name="mts_status_sent_bvsc">Đã gửi</string>
+    <string name="mts_status_pending_fos">Đang chờ khớp</string>
+    <string name="mts_account_change_autherntication_successful">Thay đổi kiểu xác thực thành công, quý khách vui lòng kiểm tra email để xem chi tiết</string>
+    <string name="mts_trading_order_matching_type_ooc">Phát sinh 1 lần</string>
+    <string name="mts_trading_order_buy">MUA</string>
+    <string name="mts_trading_pt_order_buy">MUA PT</string>
+    <string name="mts_trading_pt_1f_order_buy">MUA 1F</string>
+    <string name="mts_trading_pt_2f_order_buy">MUA 2F</string>
+    <string name="mts_trading_pt_1f_order_sell">BÁN 1f</string>
+    <string name="mts_trading_pt_2f_order_sell">BÁN 2f</string>
+    <string name="mts_trading_buyin_order_buy">MUA BUYIN</string>
+    <string name="mts_trading_order_buy_hsc">M</string>
+    <string name="mts_trading_order_sell">BÁN</string>
+    <string name="mts_trading_pt_order_sell">BÁN PT</string>
+    <string name="mts_trading_buyin_order_sell">BÁN BUYIN</string>
+    <string name="mts_trading_order_sell_hsc">B</string>
+    <string name="mts_stock_list">D.S Cổ phiếu</string>
+    <item name="MARKET_DETAI_VIEW_GROUP_CHART" type="id" />
+    <item name="MARKET_DETAI_VIEW_GROUP_MATCHED" type="id" />
+    <item name="MARKET_DETAI_VIEW_GROUP_PIE" type="id" />
+    <item name="MARKET_DETAI_VIEW_GROUP_NEWS" type="id" />
+    <string name="fos_mt_deposit_vsd_type">Nộp ký quỹ GD CKPS tại VSD</string>
+    <string name="symbol_status_61">Chứng khoán TT61( Mextra- Outroom Margin)</string>
+    <string name="not_accept">Chưa duyệt</string>
+    <string name="TransferType10">Chuyển qua MB</string>
+    <string name="S_TradingType1">Bán thường</string>
+    <string name="S_TradingType3">Bán cầm cố</string>
+    <string name="S_TradingType4">Bán OutR</string>
+    <string name="S_TradingType5">Bán TT68</string>
+    <string name="S_TradingType6">Bán F</string>
+    <string name="S_TradingType8">Bán P1</string>
+    <string name="S_TradingType9">Bán P2</string>
+    <string name="B_TradingType1">Mua thường</string>
+    <string name="B_TradingType2">Mua margin</string>
+    <string name="B_TradingType4">Mua OutR</string>
+    <string name="B_TradingType7">Mua FAL</string>
+    <string name="B_TradingType8">Mua P1</string>
+    <string name="B_TradingType9">Mua P2</string>
+    <string name="status_stock_02">Thường</string>
+    <string name="mts_string_delete_price_alerts_success">Yêu cầu cảnh báo giá của Quý khách đã được hủy thành công</string>
+    <string name="mts_string_delete_index_alerts_success">Yêu cầu cảnh báo chỉ số thị trường của Quý khách đã được hủy thành công</string>
+    <string name="mts_string_order_status_edit">Đã nhận lệnh sửa của quý khách. Chi tiết vui lòng kiểm tra trạng thái lệnh</string>
+    <string name="error_message">Thông báo lỗi</string>
+    <string name="round_unit_one_unit">Đơn vị</string>
+    <string name="round_unit_half_unit">Nửa đơn vị</string>
+    <string name="round_unit_dozen">Chục</string>
+    <string name="round_unit_hundreds">Trăm</string>
+    <string name="round_unit_thousand">Nghìn</string>
+    <string name="round_unit_ten_thousand">Chục nghìn</string>
+    <string name="round_unit_hundred_thousand">Trăm nghìn</string>
+    <string name="round_unit_million">Triệu</string>
+    <string name="round_unit_ten_million">Chục triệu</string>
+    <string name="round_unit_hundred_million">Trăm triệu</string>
+    <string name="round_unit_billion">Tỷ</string>
+    <string name="tranfer_type_not_allow">Không được phép chuyển nhượng</string>
+    <string name="tranfer_type_allow">Được phép chuyển nhượng</string>
+    <string name="tranfer_type_allow_to_third_partner">Đươc phép chuyển nhượng cho bên thứ ba</string>
+    <string name="fo_uf_rir_finished">Đã về</string>
+    <string name="fo_uf_rir_waiting">Chưa về</string>
+    <string name="mts_string_change_info_not_empty">Thông tin thay đổi không được để trống.</string>
+    <string name="update_notify_method_successfully">Quý khách đã cập nhật cấu hình cảnh báo thành công.</string>
+    <string name="fos_close_position_success_status">Đã xử lý</string>
+    <string name="fos_money_transfer_fee_type_excluding">Phí ngoài</string>
+    <string name="fos_uf_oc_status_all">Tất cả</string>
+    <string name="fos_uf_oc_status_waiting">Chờ Xác Nhận</string>
+    <string name="fos_uf_oc_status_finished">Đã Xác Nhận</string>
+    <string name="fos_order">Đặt</string>
+    <string name="mts_account_modify_alert_select_channel">Bạn phải chọn hình thức nhận mã xác nhận!</string>
+    <string name="Notifier_AddPriceNotifyComplete">Quý khách đã đăng ký cảnh báo giá thành công.</string>
+    <string name="Notifier_AddIndexNotifyComplete">Quý khách đã đăng ký cảnh báo chỉ số thị trường thành công.</string>
+    <string name="COO_OderInfo_CooType_ALL">Tất cả</string>
+
+    <string name="margin_status_nothing">N/A</string>
+    <string name="margin_status_call_force_sell">Ép bán</string>
+    <string name="margin_status_call_force_sell_fos">Đóng bắt buộc</string>
+    <string name="margin_status_call_margin">Yều cầu ký quỹ</string>
+    <string name="margin_status_call_last_call">Đóng tài khoản</string>
+    <string name="margin_status_call_normal">Bình thường</string>
+
+    <string name="account_margin">TK ký quỹ</string>
+    <string name="account_normal">TK thường</string>
+    <string name="account_normal_long">Tài khoản thường</string>
+    <string name="account_derivative">TK phái sinh</string>
+
+    <string name="full_account">Tất cả tài khoản</string>
+    <string name="cash_account">Cổ phiếu</string>
+    <string name="buy_advance_account">Tài khoản tạm ứng</string>
+    <string name="bcc_t_account">Tài khoản BBC T</string>
+    <string name="credit_account">Tài khoản tín dụng</string>
+    <string name="bond_account">Trái phiếu</string>
+    <string name="margin_account">Tài khoản ký quỹ</string>
+    <string name="derivation_account">Phái sinh</string>
+
+    <string name="full_account_short">Tất cả tài khoản</string>
+    <string name="cash_account_short">Cổ phiếu</string>
+    <string name="buy_advance_account_short">Tài khoản tạm ứng</string>
+    <string name="bcc_t_account_short">Tài khoản BBC T</string>
+    <string name="credit_account_short">Tài khoản tín dụng</string>
+    <string name="bond_account_short">Trái phiếu</string>
+    <string name="margin_account_short">Tài khoản ký quỹ</string>
+    <string name="derivation_account_short">Phái sinh</string>
+
+    <!-- Channel name -->
+    <string name="ChanelType_All">Tất cả</string>
+    <string name="ChanelType_B">Môi giới</string>
+    <string name="ChanelType_H">Home Trading</string>
+    <string name="ChanelType_I">IVR</string>
+    <string name="ChanelType_K">Trade Pro</string>
+    <string name="ChanelType_M">Mobile Trade</string>
+    <string name="ChanelType_N">SMS</string>
+    <string name="ChanelType_P">Pro Broker</string>
+    <string name="ChanelType_S">Internet</string>
+    <string name="ChanelType_T">Mobile Trade</string>
+    <string name="ChanelType_W">Web Trade</string>
+    <string name="ChanelType_F">Phái sinh</string>
+
+    <string name="Account_SystemEquity">Cổ phiếu</string>
+    <string name="Account_SystemDerivative">Phái sinh</string>
+    <string name="Account_SystemBond">Trái phiếu</string>
+
+    <string name="request_otp_success">Mã xác nhận (OTP) của Quý khách đã được gửi thành công qua Email/SMS đăng ký.</string>
+
+    <string name="market_hose_name">HSX</string>
+    <string name="market_vn30_name">VN30</string>
+    <string name="market_hnx_name">HNX</string>
+    <string name="market_upcom_name">UPCOM</string>
+    <string name="market_vnx_all_share_name">VNX-ALL</string>
+    <string name="market_vnx50_name">VNX50</string>
+    <string name="market_hnx30_name">HNX30</string>
+    <string name="market_derivative_name">Phái sinh</string>
+
+    <string name="TO_OrderInfo_StatusPendingNight">Đang chờ</string>
+    <string name="TO_OrderInfo_StatusPendingNight_bvsc">Đang chờ</string>
+    <!--    Cash Advance Status Response-->
+    <string name="cashAdvanceStatus_all">Tất cả</string>
+    <string name="cashAdvanceStatus_pending">Đang chờ</string>
+    <string name="cashAdvanceStatus_authorized">Xác nhận</string>
+    <string name="cashAdvanceStatus_settled">Đã xử lý</string>
+    <string name="cashAdvanceStatus_cancelled">Đã huỷ</string>
+    <string name="cashAdvanceStatus_pendingAproval">Chờ xác nhận</string>
+    <!--    Stock Transfer Status Response-->
+    <string name="stockTransferStatusResponse_Unsettled">Chưa xử lý</string>
+    <string name="stockTransferStatusResponse_PartialSettled">Xử lý một phần</string>
+    <string name="stockTransferStatusResponse_FullySettled">Đã xử lý</string>
+    // UTILITY_STATUS
+    <string name="mts_utility_status_waiting">Chờ xử lý</string>
+    <string name="mts_utility_status_processing">Đang xử lý</string>
+    <string name="mts_utility_status_finshed">Đã xử lý</string>
+    <string name="mts_utility_status_rejected">Bị từ chối</string>
+    <string name="mts_utility_status_cancelled">Hủy</string>
+    <string name="mts_buy_short">M</string>
+    <string name="mts_sell_short">B</string>
+    <string name="mts_change_password_successful">Đổi mật khẩu thành công</string>
+    <string name="mts_password_not_contain">Mật khẩu phải gồm có:\nPhải có Ít nhất 6 ký tự\nPhải có ít nhất 1 chữ cái viết hoa (A - Z)\nPhải có ít nhất 1 chữ thường (a - z)\nPhải có ít nhất 1 chữ số (0 - 9)</string>
+    <string name="mts_account_status_call_force_sell">Ép bán</string>
+    <string name="mts_account_status_call_margin">Yều cầu ký quỹ</string>
+    <string name="mts_account_status_normal">Bình thường</string>
+
+    <!--Loai giao dich sao ke tien-->
+    <string name="TO_History_CashTrans_Balance_Head_Period">Số dư đầu kỳ</string>
+    <string name="TO_History_CashTrans_Balance_End_Period">Số dư cuối kỳ</string>
+    <string name="Cash_Transaction_History_BU">%1$s %2$s %3$s price %4$s date %5$s</string>
+    <string name="Cash_Transaction_History_SE">%1$s %2$s %3$s giá %4$s (ngày %5$s)</string>
+    <string name="Cash_Transaction_History_COMM">Phí giao dịch %1$s %2$s %3$s giá %4$s ngày %5$s</string>
+    <string name="Cash_Transaction_History_TAX">Thuế %1$s %2$s %3$s giá %4$s ngày %5$s</string>
+    <string name="Cash_Transaction_History_RECADV">Vay ứng trước ngày %1$s</string>
+    <string name="Cash_Transaction_History_ADVFEE">Phí ứng tiền bán chứng khoán ngày %1$s</string>
+    <string name="Cash_Transaction_History_ADVVAT">Thuế VAT khoản ứng trước tiền bán ngày %1$s</string>
+    <string name="Cash_Transaction_History_ADVAMT">Thanh toán khoản vay ứng trước ngày %1$s</string>
+    <string name="Cash_Transaction_History_XD">Trả cổ tức bằng tiền  %1$s %2$s ngày %3$s</string>
+    <string name="Cash_Transaction_History_IP">Trả lãi tiền gửi</string>
+    <string name="Cash_Transaction_History_IP_TAX">Thuế lãi tiền gửi</string>
+    <string name="Cash_Transaction_History_MTHINT">Lãi tiền gửi</string>
+    <string name="Cash_Transaction_History_MTHINTTAX_CONTENT">Thuế lãi tiền gửi TK tất toán</string>
+    <string name="Cash_Transaction_History_MTHINTTAX">Thuế lãi tiền gửi</string>
+    <string name="Cash_Transaction_History_RECOT">Tăng khác</string>
+    <string name="Cash_Transaction_History_PAYOT">Giao dịch khác: chuyển nợ, thu phí lưu ký, rút tiền khác…</string>
+    <string name="Cash_Transaction_History_XR">Thanh toán tiền quyền mua %1$s %2$s ngày %3$s</string>
+    <string name="Cash_Transaction_History_XRODD">Tiền cổ tức lô lẻ %1$s ngày %2$s</string>
+    <string name="Cash_Transaction_History_RECREF">Hoàn trả phí giao dịch</string>
+    <string name="Cash_Transaction_History_XI_Plus">Nhận lãi trái phiếu %1$s %2$s ngày %3$s</string>
+    <string name="Cash_Transaction_History_XI_">Thuế nhận lãi trái phiếu %1$s %2$s ngày %3$s</string>
+    <string name="Cash_Transaction_History_OI_">Phí dịch vụ hỗ trợ tiền mua CK</string>
+    <string name="Cash_Transaction_History_LOANINT">Lãi tiền vay từ khoản bán CK cầm cố ngày %1$s</string>
+    <string name="Cash_Transaction_History_IN_">Thu lãi tháng</string>
+    <string name="Cash_Transaction_History_LHDEN">Liên hàng đến</string>
+    <string name="Cash_Transaction_History_LHDI">Liên hàng đi</string>
+    <string name="Cash_Transaction_History_MOVECASHFROM">Chuyển tiền cho tài khoản %1$s</string>
+    <string name="Cash_Transaction_History_MOVECASHTO">Nhận tiền từ tài khoản %1$s</string>
+    <string name="Cash_Transaction_History_PDV">Phí dịch vụ chuyển tiền %1$s Ngày %2$s</string>
+    <string name="Cash_Transaction_History_PL">Lãi/ lỗ</string>
+    <string name="Cash_Transaction_History_XD_">Thanh toán thuế cổ tức %1$s %2$s ngày %3$s</string>
+    <string name="Cash_Transaction_History_XRCANCEL">Hủy nộp tiền đăng ký mua CK phát hành thêm %1$s Ngày %2$s</string>
+    <string name="Cash_Transaction_History_OI_Minus">Phí trả chậm</string>
+    <string name="Cash_Transaction_History_IN">Lãi tạm tính</string>
+
+    <string name="Cash_Transaction_History_COMM_BU"></string>
+    <string name="Cash_Transaction_History_COMM_SE"></string>
+    <string name="Cash_Transaction_History_XD_Minus"></string>
+    <string name="Cash_Transaction_History_XI_Minus"></string>
+    <string name="Cash_Transaction_History_LOANIN"></string>
+    <string name="Cash_Transaction_History_VSDFee"></string>
+
+    <string name="Cash_Transaction_History_DH">Gửi tiền</string>
+    <string name="Cash_Transaction_History_WH">Rút tiền</string>
+    <string name="Cash_Transaction_History_OT">Phí khác</string>
+    <string name="Cash_Transaction_History_TO">Chuyển khoản chứng khoán</string>
+    <string name="Cash_Transaction_History_TI">Nhận chuyển khoản chứng khoán</string>
+    <string name="Cash_Transaction_History_TC">Chuyển khoản nội bộ</string>
+    <string name="Cash_Transaction_History_WD">Rút chứng khoán</string>
+    <string name="Cash_Transaction_History_DE">Lưu ký chứng khoán</string>
+    <string name="Cash_Transaction_History_GC">Đổi trạng thái CK</string>
+    <string name="Cash_Transaction_History_BH">Mua chứng khoán</string>
+    <string name="Cash_Transaction_History_SH">Bán chứng khoán</string>
+    <string name="Cash_Transaction_History_MT">Lãi/lỗ hàng ngày</string>
+    <string name="Cash_Transaction_History_BFT">Thuế  Mua</string>
+    <string name="Cash_Transaction_History_SFT">Thuế Bán</string>
+    <string name="Cash_Transaction_History_WHI">Rút tiền</string>
+    <string name="Cash_Transaction_History_WHE">Rút tiền tại VSD</string>
+    <string name="Cash_Transaction_History_DHI">Gửi tiền</string>
+    <string name="Cash_Transaction_History_DHE">Gửi tiền tại VSD</string>
+    <string name="Cash_Transaction_History_OTO">Phí quản lý vị thế qua đêm</string>
+    <string name="Cash_Transaction_History_OT2">Phí quản lý tài sản</string>
+    <string name="Cash_Transaction_History_PS">Lời / lỗ lệnh bán</string>
+    <string name="Cash_Transaction_History_PB">Lời/lỗ từ vị thế mua</string>
+    <string name="Cash_Transaction_History_XR1">Trả cổ tức bằng tiền</string>
+    <string name="Cash_Transaction_History_XR3">Đăng ký quyền mua</string>
+    <string name="Cash_Transaction_History_XR4">Hủy đăng ký quyền mua</string>
+    <string name="Cash_Transaction_History_XDR">Trả cổ tức bằng tiền</string>
+    <string name="Cash_Transaction_History_XDO">Trả cổ tức khác</string>
+    <string name="Cash_Transaction_History_SE8">Phí Bán</string>
+    <string name="Cash_Transaction_History_IP7">Lãi tiền gửi</string>
+    <string name="Cash_Transaction_History_IP4">Lãi tiền gửi VSD</string>
+    <string name="Cash_Transaction_History_BU8">Phí Mua</string>
+    <string name="Cash_Transaction_History_EB8">Phí vị thế mua đáo hạn</string>
+    <string name="Cash_Transaction_History_EBT">Thuế vị thế mua đáo hạn</string>
+    <string name="Cash_Transaction_History_ES8">Phí vị thế bán đáo hạn</string>
+    <string name="Cash_Transaction_History_EST">Thuế vị thế bán đáo hạn</string>
+    <string name="Cash_Transaction_History_XRF">Đăng ký quyền mua</string>
+    <string name="Cash_Transaction_History_PLF">Lãi lỗ vị thế đã đóng</string>
+    <string name="Cash_Transaction_History_INF">Lãi vay margin</string>
+    <string name="Cash_Transaction_History_OIF_Minus">Phí trả chậm</string>
+
+    <string name="StockTransaction_OpenBalance">Số dư đầu kỳ</string>
+    <string name="StockTransaction_CloseBalance">Số dư cuối kỳ</string>
+    <string name="StockTransaction_Deposit">Lưu ký chứng khoán</string>
+    <string name="StockTransaction_WithDraw">Rút chứng khoán chưa lưu ký</string>
+    <string name="StockTransaction_TransferFromOtherBroker">Nhận chứng khoán</string>
+    <string name="StockTransaction_TransferToOtherBroker">Chuyển khoản chứng khoán</string>
+    <string name="StockTransaction_SellOddLotShares">Giao dịch bán cổ phiếu lô lẻ</string>
+    <string name="StockTransaction_PledgeToSellable">CK Cầm cố sang CK Có thể bán</string>
+    <string name="StockTransaction_RegisterSharesToSellable">CK đăng ký lưu ký sang CK Có thể bán</string>
+    <string name="StockTransaction_LimitedTransferToSellable">CK hạn chế chuyển nhượng sang CK có thể bán</string>
+    <string name="StockTransaction_SellableToPledge">CK Có thể bán sang CK Cầm cố</string>
+    <string name="StockTransaction_SellableToRegisterShares">CK Có thể bán sang CK đăng ký lưu ký</string>
+    <string name="StockTransaction_SellableToLimitedTransfer">CK có thể bán sang CK hạn chế chuyển nhượng</string>
+    <string name="StockTransaction_LimitedTransfer">Trạng thái hạn chế chuyển nhượng</string>
+    <string name="StockTransaction_PledgeShares">Trạng thái cầm cố</string>
+    <string name="StockTransaction_RightBuyStock">Quyền mua CK</string>
+    <string name="StockTransaction_ReceiveRightStock">Nhận chứng khoán từ quyền mua</string>
+    <string name="StockTransaction_RightStocks">CK quyền</string>
+    <string name="StockTransaction_RightStocks2">Quyền cổ phiếu</string>
+    <string name="StockTransaction_NewShares">CK mới niêm yết</string>
+    <string name="StockTransaction_RegisterSharesToLimitedTransfer">CK đăng ký lưu ký sang CK hạn chế chuyển nhượng</string>
+    <string name="StockTransaction_LimitedTransferToRegisterShares">CK Có thể bán sang CK đăng ký lưu ký</string>
+    <string name="StockTransaction_BuyDate">Mua ngày</string>
+    <string name="StockTransaction_SellDate">Bán ngày</string>
+    <string name="StockTransaction_Price">giá</string>
+    <string name="StockTransaction_ReceiveRightStocks">Nhận CK từ quyền mua</string>
+
+    //tps string
+    <string name="rightType_None_RIHF">N/A</string>
+    <string name="rightType_All_RIHF">Tất cả</string>
+    <string name="rightType_RightBuySharedBond_RIHF">Quyền mua cổ phiếu/trái phiếu</string>
+    <string name="rightType_StockBonus_RIHF">Cổ phiếu thưởng</string>
+    <string name="rightType_StockDividend_RIHF">Cổ tức bằng cổ phiếu</string>
+    <string name="rightType_CashDividend_RIHF">Cổ tức bằng tiền</string>
+    <string name="rightType_Transferred_RIHF">Chuyển nhượng</string>
+
+    <string name="pending_status_AOF"/>
+    <string name="reject_status_AOF"/>
+    <string name="status_Finished_TPS"/>
+    //tps string end
+
+    <!-- StatusAccountBank -->
+    <string name="status_account_bank_inactive">Chưa kích hoạt</string>
+    <string name="status_account_bank_suspend">Tạm ngưng</string>
+    <string name="status_account_bank_active">Kích hoạt</string>
+    <string name="status_account_bank_approved_PGD">Phê duyệt lần 1</string>
+    <string name="status_account_bank_approved_DVKH">Phê duyệt lần 2</string>
+    <string name="status_account_bank_rejected">Bị từ chối</string>
+    <string name="status_account_bank_canceled">Đã hủy</string>
+
+    <string name="mts_fos_conditional_order_lo" >Thường</string>
+    <string name="transferExternal_MTSHF">Chuyển bên ngoài</string>
+    <string name="network_not_ok_message">Kết nối không ổn định, vui lòng nhấn thử lại</string>
+    <string name="cash_account_v2">Cơ sở</string>
+    <string name="mt_transfer_internal_account">%2$s %1$s</string>
+    <string name="bond_account_v2">trái phiếu</string>
+    <string name="derivation_account_v2">phái sinh</string>
+    //BVSC NEW PRICEBOARD
+    <string name="more_bvsc_edit">Chỉnh sửa</string>
+    <string name="more_bvsc_arrange">Sắp xếp</string>
+    <string name="more_bvsc_vertical_price_board">Bảng giá ngang</string>
+    <string name="more_bvsc_expand_price_board">Mở rộng bảng giá</string>
+    <string name="more_bvsc_hide_index_box">Ẩn biểu đồ chỉ số</string>
+    <string name="more_bvsc_show_odd_lot">Hiện thông tin lô lẻ</string>
+    <string name="more_bvsc_hide_odd_lot">Ẩn thông tin lô lẻ</string>
+    <string name="more_bvsc_horizontal_price_board">Bảng giá dọc</string>
+    <string name="more_bvsc_collapse_price_board">Thu gọn bảng giá</string>
+    <string name="more_bvsc_show_index_box">Hiện biểu đồ chỉ số</string>
+    <string name="add_fav_stock_to_watchlist">Thêm mã CK vào danh mục</string>
+    <string name="ECS1109">Đăng ký sOTP không thành công do không lấy được thông tin mã thiết bị</string>
+    <string name="HaltStatus">Tạm ngừng giao dịch</string>
+    <string name="RHaltStatus">Mở cửa giao dịch định kỳ</string>
+
+    // Filterd Order Status Label
+    <string name="filter_working_label">Hoạt động</string>
+    <string name="filter_completed_label">Hoàn thành</string>
+    <string name="filter_rejected_label">Từ chối</string>
+    <string name="filter_expired_label">Hết hạn</string>
+    <string name="filter_NO_label">Trước ngày</string>
+
+    <string name="mts_holding_list">Mã nắm giữ</string>
+</resources>

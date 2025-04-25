@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    // common
+
+    <bool name="EnableOTWSV2">false</bool>
+    <bool name="EnableMicroServices">false</bool>
+    <bool name="isEnableUPCOM">true</bool>
+    <bool name="enableBuySellStockChart">true</bool>
+    <bool name="enableGroupOrder">true</bool>
+    <integer name="numberMaxGroupOrder">10</integer>
+    <bool name="EnableMP">true</bool>
+    <bool name="enableNightOrder">true</bool>
+    <bool name="checkATC">true</bool>
+    <integer name="isCheckCashBalance">1</integer>
+    <bool name="EnableCheckCreditType">true</bool>
+    <bool name="IsCheckCash">true</bool>
+    <bool name="isCheckStockVal">true</bool>
+    <bool name="enableAutoApprove">false</bool>
+    <bool name="enableHNX_SOR_InCore">true</bool>
+    <bool name="enableHSX_SOR_InCore">false</bool>
+    <bool name="enableUPCOM_SOR_InCore">true</bool>
+    <integer name="fetchMarketDataInterval">5000</integer>
+    <bool name="HNXChangeEnable">true</bool>
+    <bool name="HNXEnableMTL">true</bool>
+    <bool name="HNXEnableATO">false</bool>
+    <bool name="HNXEnableATC">true</bool>
+    <bool name="HNXEnableMOK">true</bool>
+    <bool name="HNXEnableMAK">true</bool>
+    <bool name="HNXEnableSBO">false</bool>
+    <bool name="HNXEnableOBO">false</bool>
+    <bool name="HNXEnablePLO">false</bool>
+    <bool name="HNXEnableSMALLERSO">false</bool>
+    <bool name="HNXEnableBIGGERSO">false</bool>
+    <bool name="HNXEnableIO">false</bool>
+    <bool name="UPCOMEnableMTL">false</bool>
+    <bool name="UPCOMEnableATO">false</bool>
+    <bool name="UPCOMEnableATC">false</bool>
+    <bool name="UPCOMEnableMOK">false</bool>
+    <bool name="UPCOMEnableMAK">false</bool>
+    <bool name="UPCOMEnableSBO">false</bool>
+    <bool name="UPCOMEnableOBO">false</bool>
+    <bool name="UPCOMEnablePLO">false</bool>
+    <bool name="UPCOMEnableSMALLERSO">false</bool>
+    <bool name="UPCOMEnableBIGGERSO">false</bool>
+    <bool name="UPCOMEnableIO">false</bool>
+    <bool name="enableOrderInBreakingTime">true</bool>
+    <bool name="enableMarketInsight">true</bool>
+    <integer name="maxBreakingNews">6</integer>
+    <bool name="enableChangeStockOnEditOrder">false</bool>
+    <bool name="enableChangeAccountOnEditOrder">false</bool>
+    <bool name="enableMoneyTransferCustomFee">true</bool>
+    <bool name="enableShowTransferFeeByKeyWithdrawIndentityCardOnTransferMoney">true</bool>
+    <bool name="enableConditionalOrderTS">true</bool>
+    <string name="ChannelId" translatable="false">M</string>
+    <integer name="groupOrderValidationStepPrice">0</integer>
+    <bool name="enableConditionalOrder">true</bool>
+    // --------------------------------------------------
+    <integer-array name="moneyTransferNormalKeysAllow">
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <integer-array name="moneyTransferLinkKeysAllow">
+        <item>3</item>
+        <item>7</item>
+    </integer-array>
+    <integer-array name="moneyTransferMarginKeysAllow">
+        <item>3</item>
+        <item>7</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <bool name="EnableChangeOrder">true</bool>
+
+
+    <bool name="useIntradayChart">false</bool>
+    <bool name="enableForeignBuySell">false</bool>
+    <bool name="enableFingerprint">false</bool>
+    <integer name="PasswordMinLength">6</integer>
+    <integer name="PasswordMaxLength">50</integer>
+    <integer name="PINMinLength">6</integer>
+    <integer name="PINMaxLength">50</integer>
+    <bool name="EnableValidSSLCertificate">false</bool>
+    <bool name="PreventScreenCaptureNonSecure">true</bool>
+    <bool name="EnableBroker">false</bool>
+    <bool name="EnableSelfAgent">false</bool>
+    <integer name="maxFailLogin">5</integer>
+    <integer name="maxFailForgotPass">5</integer>
+    <integer name="maxFailLogin_Pre">3</integer>
+    <integer name="MaxFailLogin_Waittime">30</integer>
+    <string name="UncaughtExceptionAction" translatable="false">com.innotech.MTS.POC.SEND_LOG</string>
+    <!-- Enable to visible the Market -->
+    <bool name="enableHNX30">true</bool>
+    <!-- Enable to visible Contact Phone List -->
+    <bool name="enableContactPhoneList">false</bool>
+    <!-- Enable to visible internal status -->
+    <bool name="enableInternalStatus">false</bool>
+    <!-- Enable to visible bank status -->
+    <bool name="enableBankStatus">false</bool>
+    <bool name="usingGetAccountInfoForInternalTransfer">true</bool>
+    <!-- Enable T3 in Cash Balance view header -->
+    <bool name="CashBalance_EnableT3">false</bool>
+    <!-- Enable Contact Phone SMS -->
+    <bool name="AccountInfomation_Phone_SMS">false</bool>
+    <!-- Enable Margin Group -->
+    <bool name="AccountInfomation_Margin_Group">true</bool>
+    <!-- Enable Money Transfer Fee Excluding -->
+    <bool name="moneytransfer_fee_excluding">true</bool>
+    <!-- Style Range Time Button -->
+    <bool name="styleRangeTimeButton">false</bool>
+    <bool name="UseFOS">true</bool>
+    <bool name="enableTradingView">false</bool>
+    <bool name="allowNightOrderFOS">false</bool>
+
+    //tps
+    //tps moremenu function enable config by default code
+    <bool name="CM_OH_EnableTPS">false</bool>
+    <bool name="CM_OMH_EnableTPS">false</bool>
+    <bool name="UF_OC_EnableTPS">false</bool>
+    <bool name="TF_MI_PT_EnableTPS">false</bool>
+    <bool name="UF_AS_PriceAndIndexAlert_EnableTPS">false</bool>
+    <bool name="UF_MT_EnableTPS">false</bool>
+    <bool name="UF_ST_EnableTPS">false</bool>
+    <bool name="UF_CA_EnableTPS">false</bool>
+    <bool name="CM_CAH_EnableTPS">false</bool>
+    <bool name="CM_SEH_EnableTPS">false</bool>
+    <bool name="UF_MGL_EnableTPS">false</bool>
+    <bool name="UF_RIR_EnableTPS">false</bool>
+    <bool name="CM_RGRL_EnableTPS">false</bool>
+    <bool name="UF_NLS_HotNew_EnableTPS">false</bool>
+    <bool name="UF_AS_NotifyHistory_EnableTPS">false</bool>
+    <bool name="AM_AI_EnableTPS">false</bool>
+    <bool name="AM_Change_Password_EnableTPS">false</bool>
+    <bool name="AM_Change_Authenticate_EnableTPS">false</bool>
+    <bool name="AM_Change_Pin_EnableTPS">false</bool>
+    <bool name="AM_BankAccount_EnableTPS">false</bool>
+    <bool name="TouchAndFaceID_EnableTPS">false</bool>
+    <bool name="UF_AS_AlertSetting_EnableTPS">false</bool>
+    <bool name="UF_AS_AlertList_EnableTPS">false</bool>
+    <bool name="FO_AM_DeviceRegistration_EnableTPS">false</bool>
+    <bool name="ContactSupport_EnableTPS">false</bool>
+    <bool name="OverviewPreLogin_Enable">false</bool>
+
+    //list of filter notify history
+    <string name="UF_AS_NotifyHistory_ServiceCodeFilter" translatable="false">11</string>    //list of filter notify history
+
+    <integer name="WorldIndexListIntervalTime">10</integer>
+    <integer name="PortfolioIntervalTime">5</integer>
+
+    <integer name="stepUnit">100</integer>
+    <string name="priceStepAnchor_1">10000.0</string>
+    <string name="priceStepAnchor_2">50000.0</string>
+    <string name="priceStepUnit_1">0.01</string>
+    <string name="priceStepUnit_2">0.05</string>
+    <string name="priceStepUnit_3">0.1</string>
+    <integer name="DurationResendOTPAuthenForm">30</integer>        //OTP reset time
+    <string name="AM_EKYC_PartnerLink" translatable="false">https://hydrouat.tpb.vn/onboarding-web/onb/</string>    //ekyc tpbank open account link
+    //tps end
+
+    http://doc.innotech.vn/display/DOC/Client+Key
+    <string name="defaultSymbol" translatable="false"></string>
+    <bool name="enableSplitOrder">true</bool>
+    <integer name="maxHistoryFilterMonths">0</integer>
+    <bool name="enableCashTransfer">true</bool>
+    <bool name="enableCashAdvance">false</bool>
+    <bool name="enableStockTransfer">false</bool>
+    <bool name="enableRight">false</bool>
+    <bool name="enableNotifyPrice">true</bool>
+    <bool name="enableNotifyIndex">true</bool>
+    <bool name="enableFloatingButton">true</bool>
+    <bool name="enableOrderConfirm">true</bool>
+    <bool name="enableCashStatement">false</bool>
+    <bool name="enableCancelButtonOrderStatus">false</bool>
+    <bool name="enableValidatePassword4Condition">true</bool>
+    <bool name="isOnlyCashBalance">false</bool>
+    <bool name="enableGetLocation">true</bool>
+    <bool name="enablePostPermission">true</bool>
+    <bool name="isEnableChartChartTransactions">false</bool>
+    <bool name="isEnableStockDetailNews">false</bool>
+    <bool name="enableStockBalanceFooter">true</bool>
+    <integer name="timeKickOut">120</integer>
+    <bool name="enableDerivativeBondContract">false</bool>
+    <bool name="enableDerivative">true</bool>
+    <bool name="enableEquity">false</bool>
+    <bool name="enableStreamingStatus">false</bool>
+    <bool name="enablePageSizeTransLogStock">false</bool>
+    <bool name="enableUDPDataChartStock">false</bool>
+    <bool name="enableGetTranslogMarketDataAPINew">true</bool>
+    <bool name="enableClientCalculateBasis">false</bool>
+    <bool name="enableTranslogLe">false</bool>
+    <bool name="enableHandleStockDataV2">true</bool>
+    <bool name="enableShowDescriptionECI063">false</bool>
+    <bool name="hideAccountType">false</bool>
+    <string name="priceUnit">1.0</string>
+    <string name="priceUnitOneThousand">1000.0</string>
+    <bool name="enableKRX">false</bool>
+    <bool name="enableMicroServices">false</bool>
+    <string name="mkdtSnapshotUrl"></string>
+    <string name="wsOrderBookURL"></string>
+    <integer name="wsHeartBeatPeriod">15000</integer>
+    <integer name="nvs_divisor_market_price">1</integer>
+    <integer name="nvs_divisor_stock_price">1</integer>
+</resources>

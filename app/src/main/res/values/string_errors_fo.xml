@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://docs.google.com/spreadsheets/d/1ltvZSas_8YoIa49p562ne66vlXSGmBkKUfPSsBwW4TU/edit?gid=2049837297#gid=2049837297-->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="Typos">
+    <!--  region OMS  -->
+    <string name="OMS0">Broker / Exchange option (OMS0).</string>
+    <string name="OMS1">Unknown symbol (OMS1).</string>
+    <string name="OMS3">Order exceeds limit (OMS3).</string>
+    <string name="OMS4">Too late to enter (OMS4).</string>
+    <string name="OMS5">Unknown order (OMS5).</string>
+    <string name="OMS6">Duplicate Order (e.g. dupe ClOrdID) (OMS6).</string>
+    <string name="OMS7">Duplicate of a verbally communicated order (OMS7).</string>
+    <string name="OMS8">Stale order (OMS8).</string>
+    <string name="OMS9">Trade along required (OMS9).</string>
+    <string name="OMS10">Invalid Investor ID (OMS10).</string>
+    <string name="OMS11">Unsupported order characteristic (OMS11).</string>
+    <string name="OMS12">Surveillance option (OMS12).</string>
+    <string name="OMS13">Incorrect quantity (OMS13).</string>
+    <string name="OMS14">Incorrect allocated quantity (OMS14).</string>
+    <string name="OMS15">Unknown account (OMS15).</string>
+    <string name="OMS16">Price exceeds current price band (OMS16).</string>
+    <string name="OMS18">Invalid price increment (OMS18).</string>
+    <string name="OMS19">Reference price not available (OMS19).</string>
+    <string name="OMS20">Notional value exceeds threshold (OMS20).</string>
+    <string name="OMS22">Short sell not permitted (OMS22).</string>
+    <string name="OMS23">Short sell rejected due to security pre-borrow restriction (OMS23).</string>
+    <string name="OMS24">Short sell rejected due to account pre-borrow restriction (OMS24).</string>
+    <string name="OMS25">Insufficient credit limit (OMS25).</string>
+    <string name="OMS26">Exceeded clip size limit (OMS26).</string>
+    <string name="OMS27">Exceeded maximum notional order amount (OMS27).</string>
+    <string name="OMS28">Exceeded DV01/PV01 limit (OMS28).</string>
+    <string name="OMS29">Exceeded CS01 limit (OMS29).</string>
+    <string name="OMS99">Other (OMS99).</string>
+    <string name="OMS100">Too late to cancel (OMS100).</string>
+    <string name="OMS101">Invalid Trading Session For Order (OMS101).</string>
+    <string name="OMS102">Incorrect cancel replace information provided (OMS102).</string>
+    <string name="OMS104">Opposite Trade Pending (OMS104).</string>
+    <string name="OMS105">Different quantity lot (OMS105).</string>
+    <string name="OMS106">Trader Suspended (OMS106).</string>
+    <string name="OMS107">Invalid Security Status (OMS107).</string>
+    <string name="OMS108">Account Error (OMS108).</string>
+    <!--  endregion  -->
+
+    <!--  region OCS  -->
+    <string name="OCS201">BasketID has no symbol (OCS201).</string>
+    <string name="OCS202">No ODType supported for order (OCS202).</string>
+    <string name="OCS203">Invalid market (OCS203).</string>
+    <string name="OCS204">Unknown MsgType (OCS204).</string>
+    <string name="OCS205">Invalid StartDate and EndDate (OCS205).</string>
+    <string name="OCS206">Order status is not canceled (OCS206).</string>
+    <string name="OCS207">Side not supported (OCS207).</string>
+    <string name="OCS208">Invalid symbol price (OCS208).</string>
+    <string name="OCS103">Orders state non replaceable (OCS103).</string>
+    <string name="OCS500">Too late to cancel/replace (OCS500).</string>
+    <string name="OCS501">Orders is expired (OCS501).</string>
+    <string name="OCS502">Unsupported status to replace (OCS502).</string>
+    <string name="OCS503">Order already in Pending Cancel or Pending Replace status (OCS503).</string>
+    <string name="OCS504">Unable to process Order Mass Cancel Request (OCS504).</string>
+    <string name="OCS505">OrigOrdModTime (586) did not match last TransactTime (60) of order (OCS505).</string>
+    <string name="OCS506">Duplicate ClOrdID (11) received (OCS506).</string>
+    <string name="OCS507">Price exceeds current price (OCS507).</string>
+    <string name="OCS508">Price exceeds current price band (OCS508).</string>
+    <string name="OCS509">Invalid price incremen (OCS509).</string>
+    <string name="OCS510">Invalid algo parameters (OCS510).</string>
+    <string name="OCS511">Opposite order existed (OCS511).</string>
+    <!--  endregion  -->
+
+    <!--  region OXS  -->
+    <string name="OXS1001">Unknown symbol (OXS1001).</string>
+    <string name="OXS1002">Exchange closed (OXS1002).</string>
+    <string name="OXS1003">Order exceeds limit (OXS1003).</string>
+    <string name="OXS1004">Too late to enter (OXS1004).</string>
+    <string name="OXS1005">Unknown order (OXS1005).</string>
+    <string name="OXS1006">Duplicate Order (e.g. dupe ClOrdID) (OXS1006).</string>
+    <string name="OXS1007">Duplicate of a verbally communicated order (OXS1007).</string>
+    <string name="OXS1008">Stale order (OXS1008).</string>
+    <string name="OXS1009">Trade along required (OXS1009).</string>
+    <string name="OXS1010">Invalid Investor ID (OXS1010).</string>
+    <string name="OXS1012">Surveillance option (OXS1012).</string>
+    <string name="OXS1013">Incorrect quantity (OXS1013).</string>
+    <string name="OXS1014">Incorrect allocated quantity (OXS1014).</string>
+    <string name="OXS1015">Unknown account (OXS1015).</string>
+    <string name="OXS1016">Price exceeds current price band (OXS1016).</string>
+    <string name="OXS1018">Invalid price increment (OXS1018).</string>
+    <string name="OXS1022">Short sell not permitted (OXS1022).</string>
+    <string name="OXS9000">Too late to cancel/replace (OXS9000).</string>
+    <string name="OXS9001">Unknown order (OXS9001).</string>
+    <string name="OXS9002">Broker / Exchange Option (OXS9002).</string>
+    <string name="OXS9003">Order already in Pending Cancel or Pending Replace status (OXS9003).</string>
+    <string name="OXS9004">Unable to process Order Mass Cancel Request (OXS9004).</string>
+    <string name="OXS9005">OrigOrdModTime (586) did not match last TransactTime (60) of order (OXS9005).</string>
+    <string name="OXS9006">Duplicate ClOrdID (11) received (OXS9006).</string>
+    <string name="OXS9007">Price exceeds current price (OXS9007).</string>
+    <string name="OXS9008">Price exceeds current price band (OXS9008).</string>
+    <string name="OXS9018">Invalid price increment (OXS9018).</string>
+    <!--  endregion  -->
+
+    <!--  region ORS  -->
+    <string name="ORS10001">RType not found (ORS10001).</string>
+    <string name="ORS10002">RType "rType" not supported (ORS10002).</string>
+    <string name="ORS10003">Order "orderID" not found (ORS10003).</string>
+    <string name="ORS10004">Order "orderID" is not RootOrder (ORS10004).</string>
+    <string name="ORS10005">Not permission to view Order "orderID" (ORS10005).</string>
+    <string name="ORS10006">Order "orderID", "clOrdLinkID" not found (ORS10006).</string>
+    <string name="ORS10007">Not permission to get Childs of Order "orderID" (ORS10007).</string>
+    <string name="ORS10008">OrderID is required (ORS10008).</string>
+    <!--  endregion  -->
+
+    <!--  region ATH  -->
+    <string name="ATH1">Exception (ATH1).</string>
+    <string name="ATH2">Wrong Format Req (ATH2).</string>
+    <string name="ATH3">Request without RType (ATH3).</string>
+    <string name="ATH4">RType not supported (ATH4).</string>
+    <string name="ATH5">Time out (ATH5).</string>
+    <string name="ATH6">SessionKey not supplied (ATH6).</string>
+    <string name="ATH7">SessionKey not existed (ATH7).</string>
+    <string name="ATH8">SessionKey is inactive (ATH8).</string>
+    <string name="ATH9">SessionKey is expired (ATH9).</string>
+    <string name="ATH10">SessionKey is revoked (Kicked out) (ATH10).</string>
+    <string name="ATH99">Unknown error (ATH99).</string>
+
+    <string name="ATH20001">Username is required (ATH20001).</string>
+    <string name="ATH20002">User is invalid (ATH20002).</string>
+    <string name="ATH20003">Wrong User Name or Password (ATH20003).</string>
+    <string name="ATH20004">User is inactive (ATH20004).</string>
+    <string name="ATH20005">Display name is required (ATH20005).</string>
+    <string name="ATH20006">Login account is inactive (ATH20006).</string>
+    <string name="ATH20007">IdentityID is invalid (ATH20007).</string>
+    <string name="ATH20008">Spaces is required (ATH20008).</string>
+    <string name="ATH20009">Email is required (ATH20009).</string>
+    <string name="ATH20010">Password is incorrect (ATH20010).</string>
+    <string name="ATH20011">The new password must be difference the old password (ATH20011).</string>
+    <string name="ATH20012">Old password is required (ATH20012).</string>
+    <string name="ATH20013">New password is required (ATH20013).</string>
+    <string name="ATH20014">Space is invalid (ATH20014).</string>
+    <string name="ATH20015">Profile not found (ATH20015).</string>
+    <string name="ATH20016">Email already in use (ATH20016).</string>
+    <string name="ATH20017">Display name already in use (ATH20017).</string>
+    <string name="ATH20018">Username Already Exists (ATH20018).</string>
+    <string name="ATH20019">Request password (ATH20019).</string>
+
+    <string name="ATH50000">No permission for this account (ATH50000).</string>
+    <string name="ATH50001">No orders sent (ATH50001).</string>
+    <string name="ATH50002">Invalid confirm code (ATH50002).</string>
+    <string name="ATH50003">Confirm code is expired (ATH50003).</string>
+    <string name="ATH50004">Confirmation code is required (ATH50004).</string>
+    <!--  endregion  -->
+
+    <!--  region CMM  -->
+    <string name="CMM30001">Parameter is readonly cannot update (CMM30001).</string>
+    <string name="CMM30002">Date %s is not a day off (CMM30002).</string>
+    <string name="CMM30003">Type is required (CMM30003).</string>
+    <string name="CMM30004">Name is required (CMM30004).</string>
+    <string name="CMM30005">StartDate must before EndDate (CMM30005).</string>
+    <string name="CMM30006">StartDate and EndDate must after current date (CMM30006).</string>
+    <!--  endregion  -->
+
+    <!--  region OIS  -->
+    <string name="OIS40001">Account "accID" not found (OIS40001).</string>
+    <string name="OIS40002">SubAccountID "subAccID" of Account id "accID" not found (OIS40002).</string>
+    <string name="OIS40003">Asset not found (OIS40003).</string>
+    <string name="OIS40004">Currency is required (OIS40004).</string>
+    <string name="OIS40005">Symbol is required (OIS40005).</string>
+    <string name="OIS40006">Percent or Volume is required (OIS40006).</string>
+    <string name="OIS40007">Either OrderID or (ClOrdID, TargetSubID) required for GetOrder (OIS40007).</string>
+    <string name="OIS40008">Order not found (OIS40008).</string>
+    <string name="OIS40010">ExDestination not found (OIS40010).</string>
+    <string name="OIS40012">Basket not "basketID" not existed (OIS40012).</string>
+    <string name="OIS40013">Symbol "symbol" not existed (OIS40013).</string>
+    <!--  endregion  -->
+
+    <!--  region FOU  -->
+    <string name="FOU21000">Invalid Member (FOU21000).</string>
+    <string name="FOU21001">Invalid Manager (FOU21001).</string>
+    <string name="FOU21002">Request Account (FOU21002).</string>
+    <string name="FOU21003">Request Feature Name (FOU21003).</string>
+    <string name="FOU21004">Request Feature Description (FOU21004).</string>
+    <string name="FOU21005">Name Already In Use (FOU21005).</string>
+    <string name="FOU21006">Feature Already Exists (FOU21006).</string>
+    <string name="FOU21007">Invalid Role (FOU21007).</string>
+    <string name="FOU21008">Request Permission (FOU21008).</string>
+    <string name="FOU21009">Request to select broker group type (FOU21009).</string>
+    <string name="FOU21010">Broker group already exists (FOU21010).</string>
+    <string name="FOU21011">Broker group does not exist (FOU21011).</string>
+    <string name="FOU21012">Cannot delete broker group (FOU21012).</string>
+    <string name="FOU21013">Member has no management rights (FOU21013).</string>
+    <string name="FOU21014">Cannot delete member (FOU21014).</string>
+    <string name="FOU21015">Authorized user does not exist (FOU21015).</string>
+    <string name="FOU21016">Service code required (FOU21016).</string>
+    <!--  endregion  -->
+
+    <!--  region OTA  -->
+    <string name="OTA22000">Has not registered notify setting (OTA22000).</string>
+    <string name="OTA22001">Authenticate user not loaded (OTA22001).</string>
+    <string name="OTA22002">Pass and pin is similar (OTA22002).</string>
+    <string name="OTA22003">Invalid password length (OTA22003).</string>
+    <string name="OTA22004">Old pass is similar new pass (OTA22004).</string>
+    <!--  endregion  -->
+</resources>

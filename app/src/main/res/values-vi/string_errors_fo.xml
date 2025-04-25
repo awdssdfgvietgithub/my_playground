@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://docs.google.com/spreadsheets/d/1ltvZSas_8YoIa49p562ne66vlXSGmBkKUfPSsBwW4TU/edit?gid=2049837297#gid=2049837297-->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="Typos">
+    <!--  region OMS  -->
+    <string name="OMS0">Lỗi không xác định (OMS0).</string>
+    <string name="OMS1">Mã CK không tồn tại (OMS1).</string>
+    <string name="OMS3">Lệnh vượt KL cho phép (OMS3).</string>
+    <string name="OMS4">Lệnh đặt quá muộn, phiên không còn hợp lệ (OMS4).</string>
+    <string name="OMS5">Lệnh không tồn tại (OMS5).</string>
+    <string name="OMS6">Lệnh bị trùng ID (OMS6).</string>
+    <string name="OMS7">Duplicate of a verbally communicated order (OMS7).</string>
+    <string name="OMS8">Stale order (OMS8).</string>
+    <string name="OMS9">Trade along required (OMS9).</string>
+    <string name="OMS10">Invalid Investor ID (OMS10).</string>
+    <string name="OMS11">Unsupported order characteristic (OMS11).</string>
+    <string name="OMS12">Surveillance option (OMS12).</string>
+    <string name="OMS13">Khối lượng lệnh không hợp lệ (OMS13).</string>
+    <string name="OMS14">Sai KL lệnh được phân bổ (OMS14).</string>
+    <string name="OMS15">Số TK không tồn tại (OMS15).</string>
+    <string name="OMS16">Sai giá trần/sàn (OMS16).</string>
+    <string name="OMS18">Sai bước giá (OMS18).</string>
+    <string name="OMS19">Giá tham chiếu không có (OMS19).</string>
+    <string name="OMS20">Notional value exceeds threshold (OMS20).</string>
+    <string name="OMS22">Short sell not permitted (OMS22).</string>
+    <string name="OMS23">Short sell rejected due to security pre-borrow restriction (OMS23).</string>
+    <string name="OMS24">Short sell rejected due to account pre-borrow restriction (OMS24).</string>
+    <string name="OMS25">Insufficient credit limit (OMS25).</string>
+    <string name="OMS26">Exceeded clip size limit (OMS26).</string>
+    <string name="OMS27">Exceeded maximum notional order amount (OMS27).</string>
+    <string name="OMS28">Exceeded DV01/PV01 limit (OMS28).</string>
+    <string name="OMS29">Exceeded CS01 limit (OMS29).</string>
+    <string name="OMS99">Lỗi không xác định (OMS99).</string>
+    <string name="OMS100">Too late to cancel (OMS100).</string>
+    <string name="OMS101">Lệnh không đúng phiên (OMS101).</string>
+    <string name="OMS102">Sai thông tin lệnh sửa (OMS102).</string>
+    <string name="OMS104">Tồn tại lệnh đối ứng chưa khớp (OMS104).</string>
+    <string name="OMS105">Sai lô lệnh (OMS105).</string>
+    <string name="OMS106">Thành viên bị chỉ giao dịch (OMS106).</string>
+    <string name="OMS107">Trạng thái mã chứng khoán không hợp lệ (OMS107).</string>
+    <string name="OMS108">Tài khoản bị lỗi (OMS108).</string>
+    <!--  endregion  -->
+
+    <!--  region OCS  -->
+    <string name="OCS201">Rổ chứng khoán chưa có mã nào (OCS201).</string>
+    <string name="OCS202">No ODType supported for order (OCS202).</string>
+    <string name="OCS203">Sai thông tin Market (OCS203).</string>
+    <string name="OCS204">MsgType không tồn tại (OCS204).</string>
+    <string name="OCS205">Start Date/ End Date không hợp lệ (OCS205).</string>
+    <string name="OCS206">Lệnh ở trạng thái không thể hủy (OCS206).</string>
+    <string name="OCS207">Side không được hỗ trợ (OCS207).</string>
+    <string name="OCS208">Giá của chứng khoán không hợp lệ (OCS208).</string>
+    <string name="OCS103">Lệnh ở trạng thái không thể sửa được (2,3,4,8,C) (OCS103).</string>
+    <string name="OCS500">Lệnh ở phiên không thể hủy/sửa được (OCS500).</string>
+    <string name="OCS501">Lệnh đã hết hiệu lực (OCS501).</string>
+    <string name="OCS502">Không hỗ trợ sửa ở trạng thái này (OCS502).</string>
+    <string name="OCS503">Lệnh ở trạng thái không thể sửa được (6.E) (OCS503).</string>
+    <string name="OCS504">Unable to process Order Mass Cancel Request (OCS504).</string>
+    <string name="OCS505">OrigOrdModTime (586) did not match last TransactTime (60) of order (OCS505).</string>
+    <string name="OCS506">Trùng ClOrdID (OCS506).</string>
+    <string name="OCS507">Sửa mà bía không thay đổi (OCS507).</string>
+    <string name="OCS508">Giá sửa không nằm trong trần/sàn (OCS508).</string>
+    <string name="OCS509">Sửa sai bước giá (OCS509).</string>
+    <string name="OCS510">Tham số algo không hợp lệ (OCS510).</string>
+    <string name="OCS511">Lệnh đối ứng đã tồn tại (OCS511).</string>
+    <!--  endregion  -->
+
+    <!--  region OXS  -->
+    <string name="OXS1001">Mã CK không tồn tại (OXS1001).</string>
+    <string name="OXS1002">Sở đã đóng cửa (OXS1002).</string>
+    <string name="OXS1003">Lệnh vượt KL cho phép (OXS1003).</string>
+    <string name="OXS1004">Lệnh đặt quá muộn, phiên không còn hợp lệ (OXS1004).</string>
+    <string name="OXS1005">Lệnh không tồn tại (OXS1005).</string>
+    <string name="OXS1006">Lệnh bị trùng ID (OXS1006).</string>
+    <string name="OXS1007">Duplicate of a verbally communicated order (OXS1007).</string>
+    <string name="OXS1008">Stale order (OXS1008).</string>
+    <string name="OXS1009">Trade along required (OXS1009).</string>
+    <string name="OXS1010">Invalid Investor ID (OXS1010).</string>
+    <string name="OXS1012">Surveillance option (OXS1012).</string>
+    <string name="OXS1013">Khối lượng lệnh không hợp lệ (OXS1013).</string>
+    <string name="OXS1014">Sai KL lệnh được phân bổ (OXS1014).</string>
+    <string name="OXS1015">Số TK không tồn tại (OXS1015).</string>
+    <string name="OXS1016">Sai giá trần/sàn (OXS1016).</string>
+    <string name="OXS1018">Sai bước giá (OXS1018).</string>
+    <string name="OXS1022">Short sell not permitted (OXS1022).</string>
+    <string name="OXS9000">Hết giờ Giao dịch, không thể hủy/sửa lệnh (OXS9000).</string>
+    <string name="OXS9001">Lệnh không tồn tại (OXS9001).</string>
+    <string name="OXS9002">Lỗi không xác định (OXS9002).</string>
+    <string name="OXS9003">Lệnh đang sửa/hủy (OXS9003).</string>
+    <string name="OXS9004">Unable to process Order Mass Cancel Request (OXS9004).</string>
+    <string name="OXS9005">OrigOrdModTime (586) không trùng với TransactTime (60) cuối cùng (OXS9005).</string>
+    <string name="OXS9006">Trùng Client Order ID (ClOrdID) (OXS9006).</string>
+    <string name="OXS9007">Giá giống giá hiện tại (OXS9007).</string>
+    <string name="OXS9008">Giá vượt trần/sàn (OXS9008).</string>
+    <string name="OXS9018">Không đúng bước giá (OXS9018).</string>
+    <!--  endregion  -->
+
+    <!--  region ORS  -->
+    <string name="ORS10001">RType không tìm thấy (ORS10001).</string>
+    <string name="ORS10002">Không hỗ trợ rType (ORS10002).</string>
+    <string name="ORS10003">Lệnh không tồn tại (ORS10003).</string>
+    <string name="ORS10004">Đây không phải lệnh Cha (ORS10004).</string>
+    <string name="ORS10005">Không có quyền xem lệnh (ORS10005).</string>
+    <string name="ORS10006">Không tồn tại mã lệnh Cha (ORS10006).</string>
+    <string name="ORS10007">Không có quyền xem lệnh con (ORS10007).</string>
+    <string name="ORS10008">OrderID là bắt buộc (ORS10008).</string>
+    <!--  endregion  -->
+
+    <!--  region ATH  -->
+    <string name="ATH1">Lỗi không xác định (ATH1).</string>
+    <string name="ATH2">Sai định dạng request (ATH2).</string>
+    <string name="ATH3">Request thiếu RType (ATH3).</string>
+    <string name="ATH4">RType không được hỗ trợ (ATH4).</string>
+    <string name="ATH5">Req time out (ATH5).</string>
+    <string name="ATH6">Chưa truyền SessionKey (ATH6).</string>
+    <string name="ATH7">Session không tồn tại (ATH7).</string>
+    <string name="ATH8">Session không còn hiệu lực (ATH8).</string>
+    <string name="ATH9">Session hết hạn (ATH9).</string>
+    <string name="ATH10">Session bị kicked out (đã đăng nhập ở nơi khác) (ATH10).</string>
+    <string name="ATH99">Lỗi không xác định (ATH99).</string>
+
+    <string name="ATH20001">Yêu cầu nhập username (ATH20001).</string>
+    <string name="ATH20002">Người dùng không hợp lệ (ATH20002).</string>
+    <string name="ATH20003">Sai tên đăng nhập hoặc mật khẩu (ATH20003).</string>
+    <string name="ATH20004">Người dùng chưa kích hoạt (ATH20004).</string>
+    <string name="ATH20005">Yêu cầu nhập tên hiển thị (ATH20005).</string>
+    <string name="ATH20006">Tài khoản đăng nhập không hợp lệ (ATH20006).</string>
+    <string name="ATH20007">Mã định danh không hợp lệ (ATH20007).</string>
+    <string name="ATH20008">Chưa nhập tham số Spaces (ATH20008).</string>
+    <string name="ATH20009">Yêu cầu nhập email (ATH20009).</string>
+    <string name="ATH20010">Password không đúng (ATH20010).</string>
+    <string name="ATH20011">Mật khẩu mới không được giống mật khẩu cũ (ATH20011).</string>
+    <string name="ATH20012">Yêu cầu nhập mật khẩu cũ (ATH20012).</string>
+    <string name="ATH20013">Yêu cầu nhập mật khẩu mới (ATH20013).</string>
+    <string name="ATH20014">Space không hợp lệ (ATH20014).</string>
+    <string name="ATH20015">Không tìm thấy thông tin hồ sơ người dùng (ATH20015).</string>
+    <string name="ATH20016">Email đã được sử dụng (ATH20016).</string>
+    <string name="ATH20017">Tên người dùng đã được sử dụng (ATH20017).</string>
+    <string name="ATH20018">Tên đăng nhập đã tồn tại (ATH20018).</string>
+    <string name="ATH20019">Yêu cầu nhập mật khẩu tài khoản đăng nhập (ATH20019).</string>
+
+    <string name="ATH50000">Người dùng không có quyền thực hiện trên tài khoản này (ATH50000).</string>
+    <string name="ATH50001">Không có lệnh nào được gửi (ATH50001).</string>
+    <string name="ATH50002">Mã xác thực không hợp lệ (ATH50002).</string>
+    <string name="ATH50003">Mã xác thực đã hết hạn (ATH50003).</string>
+    <string name="ATH50004">Yêu cầu nhập mã xác nhận (ATH50004).</string>
+    <!--  endregion  -->
+
+    <!--  region CMM  -->
+    <string name="CMM30001">Tham số không được phép sửa (CMM30001).</string>
+    <string name="CMM30002">Không phải ngày nghỉ: %s (CMM30002).</string>
+    <string name="CMM30003">Trường Type là bắt buộc (CMM30003).</string>
+    <string name="CMM30004">Trường Name là bắt buộc (CMM30004).</string>
+    <string name="CMM30005">StartDate phải trước End Date (CMM30005).</string>
+    <string name="CMM30006">StartDate và EndDate phải sau ngày hiện tại (CMM30006).</string>
+    <!--  endregion  -->
+
+    <!--  region OIS  -->
+    <string name="OIS40001">Tài khoản không tồn tại (OIS40001).</string>
+    <string name="OIS40002">Sub Account không tồn tại (OIS40002).</string>
+    <string name="OIS40003">Loại tài sản không tồn tại (OIS40003).</string>
+    <string name="OIS40004">Phải nhập mã tiền tệ (Currency) (OIS40004).</string>
+    <string name="OIS40005">Phải nhập mã chứng khoán (Symbol) (OIS40005).</string>
+    <string name="OIS40006">Cần nhập tỉ lệ nắm giữ (Percent) hoặc khối lượng nắm giữ (Volume) (OIS40006).</string>
+    <string name="OIS40007">GetOrder cần truyền OrderID hoặc cặp (ClOrdID, TargetSubID) (OIS40007).</string>
+    <string name="OIS40008">Lệnh không tồn tại (OIS40008).</string>
+    <string name="OIS40010">Phải nhập mã sàn (ExDestination) (OIS40010).</string>
+    <string name="OIS40012">Tham số "basketID" không tồn tại (OIS40012).</string>
+    <string name="OIS40013">Không tồn tại mã chứng khoán (OIS40013).</string>
+    <!--  endregion  -->
+
+    <!--  region FOU  -->
+    <string name="FOU21000">Thành viên không hợp lệ (FOU21000).</string>
+    <string name="FOU21001">Quản lý không hợp lệ (FOU21001).</string>
+    <string name="FOU21002">Yêu cầu nhập tài khoản (FOU21002).</string>
+    <string name="FOU21003">Yêu cầu nhập tên tính năng (FOU21003).</string>
+    <string name="FOU21004">Yêu cầu nhập mô tả cho tính năng (FOU21004).</string>
+    <string name="FOU21005">Tên đã được sử dụng (FOU21005).</string>
+    <string name="FOU21006">Tính năng đã tồn tại (FOU21006).</string>
+    <string name="FOU21007">Vai trò không hợp lệ (FOU21007).</string>
+    <string name="FOU21008">Yêu cầu cấp quyền (FOU21008).</string>
+    <string name="FOU21009">Yêu cầu chọn loại nhóm môi giới (FOU21009).</string>
+    <string name="FOU21010">Nhóm môi giới đã tồn tại (FOU21010).</string>
+    <string name="FOU21011">Nhóm môi giới không tồn tại (FOU21011).</string>
+    <string name="FOU21012">Không thể xóa nhóm môi giới (FOU21012).</string>
+    <string name="FOU21013">Thành viên không có quyền quản lý (FOU21013).</string>
+    <string name="FOU21014">Không thể xóa thành viên (FOU21014).</string>
+    <string name="FOU21015">Người dùng ủy quyền không tồn tại (FOU21015).</string>
+    <string name="FOU21016">Yêu cầu mã dịch vụ (FOU21016).</string>
+    <!--  endregion  -->
+
+    <!--  region OTA  -->
+    <string name="OTA22000">Chưa đăng ký cài đặt thông báo (OTA22000).</string>
+    <string name="OTA22001">Người dùng không tồn tại (OTA22001).</string>
+    <string name="OTA22002">Mật khẩu và pin tương tự nhau (OTA22002).</string>
+    <string name="OTA22003">Độ dài mật khẩu không hợp lệ (OTA22003).</string>
+    <string name="OTA22004">Mật khẩu mới không được giống mật khẩu cũ (OTA22004).</string>
+    <!--  endregion  -->
+</resources>

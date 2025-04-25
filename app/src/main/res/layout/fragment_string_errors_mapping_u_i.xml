@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".features.string_errors_mapping_ui.StringErrorsMappingUIFragment">
+
+    <EditText
+        android:id="@+id/edit_text_error_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input error code"
+        android:imeOptions="actionDone"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/check_box_oms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OMS"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button_execute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Execute"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Result:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_view_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+</LinearLayout>
