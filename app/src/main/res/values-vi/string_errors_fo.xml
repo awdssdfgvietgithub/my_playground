@@ -2,107 +2,107 @@
 <!--https://docs.google.com/spreadsheets/d/1ltvZSas_8YoIa49p562ne66vlXSGmBkKUfPSsBwW4TU/edit?gid=2049837297#gid=2049837297-->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="Typos">
     <!--  region OMS  -->
-    <string name="OMS0">Lỗi không xác định (OMS0).</string>
-    <string name="OMS1">Mã CK không tồn tại (OMS1).</string>
-    <string name="OMS3">Lệnh vượt KL cho phép (OMS3).</string>
-    <string name="OMS4">Lệnh đặt quá muộn, phiên không còn hợp lệ (OMS4).</string>
-    <string name="OMS5">Lệnh không tồn tại (OMS5).</string>
-    <string name="OMS6">Lệnh bị trùng ID (OMS6).</string>
-    <string name="OMS7">Duplicate of a verbally communicated order (OMS7).</string>
-    <string name="OMS8">Stale order (OMS8).</string>
-    <string name="OMS9">Trade along required (OMS9).</string>
-    <string name="OMS10">Invalid Investor ID (OMS10).</string>
-    <string name="OMS11">Unsupported order characteristic (OMS11).</string>
-    <string name="OMS12">Surveillance option (OMS12).</string>
-    <string name="OMS13">Khối lượng lệnh không hợp lệ (OMS13).</string>
-    <string name="OMS14">Sai KL lệnh được phân bổ (OMS14).</string>
-    <string name="OMS15">Số TK không tồn tại (OMS15).</string>
-    <string name="OMS16">Sai giá trần/sàn (OMS16).</string>
-    <string name="OMS18">Sai bước giá (OMS18).</string>
-    <string name="OMS19">Giá tham chiếu không có (OMS19).</string>
-    <string name="OMS20">Notional value exceeds threshold (OMS20).</string>
-    <string name="OMS22">Short sell not permitted (OMS22).</string>
-    <string name="OMS23">Short sell rejected due to security pre-borrow restriction (OMS23).</string>
-    <string name="OMS24">Short sell rejected due to account pre-borrow restriction (OMS24).</string>
-    <string name="OMS25">Insufficient credit limit (OMS25).</string>
-    <string name="OMS26">Exceeded clip size limit (OMS26).</string>
-    <string name="OMS27">Exceeded maximum notional order amount (OMS27).</string>
-    <string name="OMS28">Exceeded DV01/PV01 limit (OMS28).</string>
-    <string name="OMS29">Exceeded CS01 limit (OMS29).</string>
-    <string name="OMS99">Lỗi không xác định (OMS99).</string>
-    <string name="OMS100">Too late to cancel (OMS100).</string>
-    <string name="OMS101">Lệnh không đúng phiên (OMS101).</string>
-    <string name="OMS102">Sai thông tin lệnh sửa (OMS102).</string>
-    <string name="OMS104">Tồn tại lệnh đối ứng chưa khớp (OMS104).</string>
-    <string name="OMS105">Sai lô lệnh (OMS105).</string>
-    <string name="OMS106">Thành viên bị chỉ giao dịch (OMS106).</string>
-    <string name="OMS107">Trạng thái mã chứng khoán không hợp lệ (OMS107).</string>
-    <string name="OMS108">Tài khoản bị lỗi (OMS108).</string>
+    <string name="OMS0">Lỗi không xác định. %s (OMS0).</string>
+    <string name="OMS1">Mã CK không tồn tại. %s (OMS1).</string>
+    <string name="OMS3">Lệnh vượt KL cho phép. %s (OMS3).</string>
+    <string name="OMS4">Lệnh đặt quá muộn, phiên không còn hợp lệ. %s (OMS4).</string>
+    <string name="OMS5">Lệnh không tồn tại. %s (OMS5).</string>
+    <string name="OMS6">Lệnh bị trùng ID. %s (OMS6).</string>
+    <string name="OMS7">Duplicate of a verbally communicated order. %s (OMS7).</string>
+    <string name="OMS8">Stale order. %s (OMS8).</string>
+    <string name="OMS9">Trade along required. %s (OMS9).</string>
+    <string name="OMS10">Invalid Investor ID. %s (OMS10).</string>
+    <string name="OMS11">Unsupported order characteristic. %s (OMS11).</string>
+    <string name="OMS12">Surveillance option. %s (OMS12).</string>
+    <string name="OMS13">Khối lượng lệnh không hợp lệ. %s (OMS13).</string>
+    <string name="OMS14">Sai KL lệnh được phân bổ. %s (OMS14).</string>
+    <string name="OMS15">Số TK không tồn tại. %s (OMS15).</string>
+    <string name="OMS16">Sai giá trần/sàn. %s (OMS16).</string>
+    <string name="OMS18">Sai bước giá. %s (OMS18).</string>
+    <string name="OMS19">Giá tham chiếu không có. %s (OMS19).</string>
+    <string name="OMS20">Notional value exceeds threshold. %s (OMS20).</string>
+    <string name="OMS22">Short sell not permitted. %s (OMS22).</string>
+    <string name="OMS23">Short sell rejected due to security pre-borrow restriction. %s (OMS23).</string>
+    <string name="OMS24">Short sell rejected due to account pre-borrow restriction. %s (OMS24).</string>
+    <string name="OMS25">Insufficient credit limit. %s (OMS25).</string>
+    <string name="OMS26">Exceeded clip size limit. %s (OMS26).</string>
+    <string name="OMS27">Exceeded maximum notional order amount. %s (OMS27).</string>
+    <string name="OMS28">Exceeded DV01/PV01 limit. %s (OMS28).</string>
+    <string name="OMS29">Exceeded CS01 limit. %s (OMS29).</string>
+    <string name="OMS99">Lỗi không xác định. %s (OMS99).</string>
+    <string name="OMS100">Too late to cancel. %s (OMS100).</string>
+    <string name="OMS101">Lệnh không đúng phiên. %s (OMS101).</string>
+    <string name="OMS102">Sai thông tin lệnh sửa. %s (OMS102).</string>
+    <string name="OMS104">Tồn tại lệnh đối ứng chưa khớp. %s (OMS104).</string>
+    <string name="OMS105">Sai lô lệnh. %s (OMS105).</string>
+    <string name="OMS106">Thành viên bị chỉ giao dịch. %s (OMS106).</string>
+    <string name="OMS107">Trạng thái mã chứng khoán không hợp lệ. %s (OMS107).</string>
+    <string name="OMS108">Tài khoản bị lỗi. %s (OMS108).</string>
     <!--  endregion  -->
 
     <!--  region OCS  -->
-    <string name="OCS201">Rổ chứng khoán chưa có mã nào (OCS201).</string>
-    <string name="OCS202">No ODType supported for order (OCS202).</string>
-    <string name="OCS203">Sai thông tin Market (OCS203).</string>
-    <string name="OCS204">MsgType không tồn tại (OCS204).</string>
-    <string name="OCS205">Start Date/ End Date không hợp lệ (OCS205).</string>
-    <string name="OCS206">Lệnh ở trạng thái không thể hủy (OCS206).</string>
-    <string name="OCS207">Side không được hỗ trợ (OCS207).</string>
-    <string name="OCS208">Giá của chứng khoán không hợp lệ (OCS208).</string>
-    <string name="OCS103">Lệnh ở trạng thái không thể sửa được (2,3,4,8,C) (OCS103).</string>
-    <string name="OCS500">Lệnh ở phiên không thể hủy/sửa được (OCS500).</string>
-    <string name="OCS501">Lệnh đã hết hiệu lực (OCS501).</string>
-    <string name="OCS502">Không hỗ trợ sửa ở trạng thái này (OCS502).</string>
-    <string name="OCS503">Lệnh ở trạng thái không thể sửa được (6.E) (OCS503).</string>
-    <string name="OCS504">Unable to process Order Mass Cancel Request (OCS504).</string>
-    <string name="OCS505">OrigOrdModTime (586) did not match last TransactTime (60) of order (OCS505).</string>
-    <string name="OCS506">Trùng ClOrdID (OCS506).</string>
-    <string name="OCS507">Sửa mà bía không thay đổi (OCS507).</string>
-    <string name="OCS508">Giá sửa không nằm trong trần/sàn (OCS508).</string>
-    <string name="OCS509">Sửa sai bước giá (OCS509).</string>
-    <string name="OCS510">Tham số algo không hợp lệ (OCS510).</string>
-    <string name="OCS511">Lệnh đối ứng đã tồn tại (OCS511).</string>
+    <string name="OCS201">Rổ chứng khoán chưa có mã nào. %s (OCS201).</string>
+    <string name="OCS202">No ODType supported for order. %s (OCS202).</string>
+    <string name="OCS203">Sai thông tin Market. %s (OCS203).</string>
+    <string name="OCS204">MsgType không tồn tại. %s (OCS204).</string>
+    <string name="OCS205">Start Date/ End Date không hợp lệ. %s (OCS205).</string>
+    <string name="OCS206">Lệnh ở trạng thái không thể hủy. %s (OCS206).</string>
+    <string name="OCS207">Side không được hỗ trợ. %s (OCS207).</string>
+    <string name="OCS208">Giá của chứng khoán không hợp lệ. %s (OCS208).</string>
+    <string name="OCS103">Lệnh ở trạng thái không thể sửa được (2,3,4,8,C). %s (OCS103).</string>
+    <string name="OCS500">Lệnh ở phiên không thể hủy/sửa được. %s (OCS500).</string>
+    <string name="OCS501">Lệnh đã hết hiệu lực. %s (OCS501).</string>
+    <string name="OCS502">Không hỗ trợ sửa ở trạng thái này. %s (OCS502).</string>
+    <string name="OCS503">Lệnh ở trạng thái không thể sửa được (6.E). %s (OCS503).</string>
+    <string name="OCS504">Unable to process Order Mass Cancel Request. %s (OCS504).</string>
+    <string name="OCS505">OrigOrdModTime (586) did not match last TransactTime (60) of order. %s (OCS505).</string>
+    <string name="OCS506">Trùng ClOrdID. %s (OCS506).</string>
+    <string name="OCS507">Sửa mà bía không thay đổi. %s (OCS507).</string>
+    <string name="OCS508">Giá sửa không nằm trong trần/sàn. %s (OCS508).</string>
+    <string name="OCS509">Sửa sai bước giá. %s (OCS509).</string>
+    <string name="OCS510">Tham số algo không hợp lệ. %s (OCS510).</string>
+    <string name="OCS511">Lệnh đối ứng đã tồn tại. %s (OCS511).</string>
     <!--  endregion  -->
 
     <!--  region OXS  -->
-    <string name="OXS1001">Mã CK không tồn tại (OXS1001).</string>
-    <string name="OXS1002">Sở đã đóng cửa (OXS1002).</string>
-    <string name="OXS1003">Lệnh vượt KL cho phép (OXS1003).</string>
-    <string name="OXS1004">Lệnh đặt quá muộn, phiên không còn hợp lệ (OXS1004).</string>
-    <string name="OXS1005">Lệnh không tồn tại (OXS1005).</string>
-    <string name="OXS1006">Lệnh bị trùng ID (OXS1006).</string>
-    <string name="OXS1007">Duplicate of a verbally communicated order (OXS1007).</string>
-    <string name="OXS1008">Stale order (OXS1008).</string>
-    <string name="OXS1009">Trade along required (OXS1009).</string>
-    <string name="OXS1010">Invalid Investor ID (OXS1010).</string>
-    <string name="OXS1012">Surveillance option (OXS1012).</string>
-    <string name="OXS1013">Khối lượng lệnh không hợp lệ (OXS1013).</string>
-    <string name="OXS1014">Sai KL lệnh được phân bổ (OXS1014).</string>
-    <string name="OXS1015">Số TK không tồn tại (OXS1015).</string>
-    <string name="OXS1016">Sai giá trần/sàn (OXS1016).</string>
-    <string name="OXS1018">Sai bước giá (OXS1018).</string>
-    <string name="OXS1022">Short sell not permitted (OXS1022).</string>
-    <string name="OXS9000">Hết giờ Giao dịch, không thể hủy/sửa lệnh (OXS9000).</string>
-    <string name="OXS9001">Lệnh không tồn tại (OXS9001).</string>
-    <string name="OXS9002">Lỗi không xác định (OXS9002).</string>
-    <string name="OXS9003">Lệnh đang sửa/hủy (OXS9003).</string>
-    <string name="OXS9004">Unable to process Order Mass Cancel Request (OXS9004).</string>
-    <string name="OXS9005">OrigOrdModTime (586) không trùng với TransactTime (60) cuối cùng (OXS9005).</string>
-    <string name="OXS9006">Trùng Client Order ID (ClOrdID) (OXS9006).</string>
-    <string name="OXS9007">Giá giống giá hiện tại (OXS9007).</string>
-    <string name="OXS9008">Giá vượt trần/sàn (OXS9008).</string>
-    <string name="OXS9018">Không đúng bước giá (OXS9018).</string>
+    <string name="OXS1001">Mã CK không tồn tại. %s (OXS1001).</string>
+    <string name="OXS1002">Sở đã đóng cửa. %s (OXS1002).</string>
+    <string name="OXS1003">Lệnh vượt KL cho phép. %s (OXS1003).</string>
+    <string name="OXS1004">Lệnh đặt quá muộn, phiên không còn hợp lệ. %s (OXS1004).</string>
+    <string name="OXS1005">Lệnh không tồn tại. %s (OXS1005).</string>
+    <string name="OXS1006">Lệnh bị trùng ID. %s (OXS1006).</string>
+    <string name="OXS1007">Duplicate of a verbally communicated order. %s (OXS1007).</string>
+    <string name="OXS1008">Stale order. %s (OXS1008).</string>
+    <string name="OXS1009">Trade along required. %s (OXS1009).</string>
+    <string name="OXS1010">Invalid Investor ID. %s (OXS1010).</string>
+    <string name="OXS1012">Surveillance option. %s (OXS1012).</string>
+    <string name="OXS1013">Khối lượng lệnh không hợp lệ. %s (OXS1013).</string>
+    <string name="OXS1014">Sai KL lệnh được phân bổ. %s (OXS1014).</string>
+    <string name="OXS1015">Số TK không tồn tại. %s (OXS1015).</string>
+    <string name="OXS1016">Sai giá trần/sàn. %s (OXS1016).</string>
+    <string name="OXS1018">Sai bước giá. %s (OXS1018).</string>
+    <string name="OXS1022">Short sell not permitted. %s (OXS1022).</string>
+    <string name="OXS9000">Hết giờ Giao dịch, không thể hủy/sửa lệnh. %s (OXS9000).</string>
+    <string name="OXS9001">Lệnh không tồn tại. %s (OXS9001).</string>
+    <string name="OXS9002">Lỗi không xác định. %s (OXS9002).</string>
+    <string name="OXS9003">Lệnh đang sửa/hủy. %s (OXS9003).</string>
+    <string name="OXS9004">Unable to process Order Mass Cancel Request. %s (OXS9004).</string>
+    <string name="OXS9005">OrigOrdModTime (586) không trùng với TransactTime (60) cuối cùng. %s (OXS9005).</string>
+    <string name="OXS9006">Trùng Client Order ID (ClOrdID). %s (OXS9006).</string>
+    <string name="OXS9007">Giá giống giá hiện tại. %s (OXS9007).</string>
+    <string name="OXS9008">Giá vượt trần/sàn. %s (OXS9008).</string>
+    <string name="OXS9018">Không đúng bước giá. %s (OXS9018).</string>
     <!--  endregion  -->
 
     <!--  region ORS  -->
-    <string name="ORS10001">RType không tìm thấy (ORS10001).</string>
-    <string name="ORS10002">Không hỗ trợ rType (ORS10002).</string>
-    <string name="ORS10003">Lệnh không tồn tại (ORS10003).</string>
-    <string name="ORS10004">Đây không phải lệnh Cha (ORS10004).</string>
-    <string name="ORS10005">Không có quyền xem lệnh (ORS10005).</string>
-    <string name="ORS10006">Không tồn tại mã lệnh Cha (ORS10006).</string>
-    <string name="ORS10007">Không có quyền xem lệnh con (ORS10007).</string>
-    <string name="ORS10008">OrderID là bắt buộc (ORS10008).</string>
+    <string name="ORS10001">RType không tìm thấy. %s (ORS10001).</string>
+    <string name="ORS10002">Không hỗ trợ rType. %s (ORS10002).</string>
+    <string name="ORS10003">Lệnh không tồn tại. %s (ORS10003).</string>
+    <string name="ORS10004">Đây không phải lệnh Cha. %s (ORS10004).</string>
+    <string name="ORS10005">Không có quyền xem lệnh. %s (ORS10005).</string>
+    <string name="ORS10006">Không tồn tại mã lệnh Cha. %s (ORS10006).</string>
+    <string name="ORS10007">Không có quyền xem lệnh con. %s (ORS10007).</string>
+    <string name="ORS10008">OrderID là bắt buộc. %s (ORS10008).</string>
     <!--  endregion  -->
 
     <!--  region ATH  -->
@@ -194,5 +194,11 @@
     <string name="OTA22002">Mật khẩu và pin tương tự nhau (OTA22002).</string>
     <string name="OTA22003">Độ dài mật khẩu không hợp lệ (OTA22003).</string>
     <string name="OTA22004">Mật khẩu mới không được giống mật khẩu cũ (OTA22004).</string>
+    <!--  endregion  -->
+
+    <!--  region MISC.  -->
+    <string name="MISC100000">FormatArgs string. %s (MISC100000).</string>
+    <string name="MISC100001">FormatArgs int %d, FormatArgs string %s (MISC100001).</string>
+    <string name="MISC100002">FormatArgs float %.2f, FormatArgs string %s, FormatArgs int %d (MISC100002).</string>
     <!--  endregion  -->
 </resources>

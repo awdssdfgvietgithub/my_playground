@@ -44,9 +44,18 @@ class StringErrorsMappingUIFragment : Fragment() {
             }
 
             val isOMS = checkBoxOms.isChecked
+            val stringArg = editTextStringArg.text.toString()
+            val intArg = editTextIntArg.text.toString().toIntOrNull()
+            val floatArg = editTextFloatArg.text.toString().toFloatOrNull()
 
             val errorString =
-                requireContext().getErrorStringFOByCode(errorCode.toIntOrNull(), isOMS)
+                requireContext().getErrorStringFOByCode(
+                    errorCode,
+                    isOMS,
+                    stringArg.ifEmpty { null },
+                    intArg,
+                    floatArg
+                )
             textViewResult.text = errorString
         }
     }

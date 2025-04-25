@@ -2,107 +2,107 @@
 <!--https://docs.google.com/spreadsheets/d/1ltvZSas_8YoIa49p562ne66vlXSGmBkKUfPSsBwW4TU/edit?gid=2049837297#gid=2049837297-->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="Typos">
     <!--  region OMS  -->
-    <string name="OMS0">Broker / Exchange option (OMS0).</string>
-    <string name="OMS1">Unknown symbol (OMS1).</string>
-    <string name="OMS3">Order exceeds limit (OMS3).</string>
-    <string name="OMS4">Too late to enter (OMS4).</string>
-    <string name="OMS5">Unknown order (OMS5).</string>
-    <string name="OMS6">Duplicate Order (e.g. dupe ClOrdID) (OMS6).</string>
-    <string name="OMS7">Duplicate of a verbally communicated order (OMS7).</string>
-    <string name="OMS8">Stale order (OMS8).</string>
-    <string name="OMS9">Trade along required (OMS9).</string>
-    <string name="OMS10">Invalid Investor ID (OMS10).</string>
-    <string name="OMS11">Unsupported order characteristic (OMS11).</string>
-    <string name="OMS12">Surveillance option (OMS12).</string>
-    <string name="OMS13">Incorrect quantity (OMS13).</string>
-    <string name="OMS14">Incorrect allocated quantity (OMS14).</string>
-    <string name="OMS15">Unknown account (OMS15).</string>
-    <string name="OMS16">Price exceeds current price band (OMS16).</string>
-    <string name="OMS18">Invalid price increment (OMS18).</string>
-    <string name="OMS19">Reference price not available (OMS19).</string>
-    <string name="OMS20">Notional value exceeds threshold (OMS20).</string>
-    <string name="OMS22">Short sell not permitted (OMS22).</string>
-    <string name="OMS23">Short sell rejected due to security pre-borrow restriction (OMS23).</string>
-    <string name="OMS24">Short sell rejected due to account pre-borrow restriction (OMS24).</string>
-    <string name="OMS25">Insufficient credit limit (OMS25).</string>
-    <string name="OMS26">Exceeded clip size limit (OMS26).</string>
-    <string name="OMS27">Exceeded maximum notional order amount (OMS27).</string>
-    <string name="OMS28">Exceeded DV01/PV01 limit (OMS28).</string>
-    <string name="OMS29">Exceeded CS01 limit (OMS29).</string>
-    <string name="OMS99">Other (OMS99).</string>
-    <string name="OMS100">Too late to cancel (OMS100).</string>
-    <string name="OMS101">Invalid Trading Session For Order (OMS101).</string>
-    <string name="OMS102">Incorrect cancel replace information provided (OMS102).</string>
-    <string name="OMS104">Opposite Trade Pending (OMS104).</string>
-    <string name="OMS105">Different quantity lot (OMS105).</string>
-    <string name="OMS106">Trader Suspended (OMS106).</string>
-    <string name="OMS107">Invalid Security Status (OMS107).</string>
-    <string name="OMS108">Account Error (OMS108).</string>
+    <string name="OMS0">Broker / Exchange option. %s (OMS0).</string>
+    <string name="OMS1">Unknown symbol. %s (OMS1).</string>
+    <string name="OMS3">Order exceeds limit. %s (OMS3).</string>
+    <string name="OMS4">Too late to enter. %s (OMS4).</string>
+    <string name="OMS5">Unknown order. %s (OMS5).</string>
+    <string name="OMS6">Duplicate Order (e.g. dupe ClOrdID). %s (OMS6).</string>
+    <string name="OMS7">Duplicate of a verbally communicated order. %s (OMS7).</string>
+    <string name="OMS8">Stale order. %s (OMS8).</string>
+    <string name="OMS9">Trade along required. %s (OMS9).</string>
+    <string name="OMS10">Invalid Investor ID. %s (OMS10).</string>
+    <string name="OMS11">Unsupported order characteristic. %s (OMS11).</string>
+    <string name="OMS12">Surveillance option. %s (OMS12).</string>
+    <string name="OMS13">Incorrect quantity. %s (OMS13).</string>
+    <string name="OMS14">Incorrect allocated quantity. %s (OMS14).</string>
+    <string name="OMS15">Unknown account. %s (OMS15).</string>
+    <string name="OMS16">Price exceeds current price band. %s (OMS16).</string>
+    <string name="OMS18">Invalid price increment. %s (OMS18).</string>
+    <string name="OMS19">Reference price not available. %s (OMS19).</string>
+    <string name="OMS20">Notional value exceeds threshold. %s (OMS20).</string>
+    <string name="OMS22">Short sell not permitted. %s (OMS22).</string>
+    <string name="OMS23">Short sell rejected due to security pre-borrow restriction. %s (OMS23).</string>
+    <string name="OMS24">Short sell rejected due to account pre-borrow restriction. %s (OMS24).</string>
+    <string name="OMS25">Insufficient credit limit. %s (OMS25).</string>
+    <string name="OMS26">Exceeded clip size limit. %s (OMS26).</string>
+    <string name="OMS27">Exceeded maximum notional order amount. %s (OMS27).</string>
+    <string name="OMS28">Exceeded DV01/PV01 limit. %s (OMS28).</string>
+    <string name="OMS29">Exceeded CS01 limit. %s (OMS29).</string>
+    <string name="OMS99">Other. %s (OMS99).</string>
+    <string name="OMS100">Too late to cancel. %s (OMS100).</string>
+    <string name="OMS101">Invalid Trading Session For Order. %s (OMS101).</string>
+    <string name="OMS102">Incorrect cancel replace information provided. %s (OMS102).</string>
+    <string name="OMS104">Opposite Trade Pending. %s (OMS104).</string>
+    <string name="OMS105">Different quantity lot. %s (OMS105).</string>
+    <string name="OMS106">Trader Suspended. %s (OMS106).</string>
+    <string name="OMS107">Invalid Security Status. %s (OMS107).</string>
+    <string name="OMS108">Account Error. %s (OMS108).</string>
     <!--  endregion  -->
 
     <!--  region OCS  -->
-    <string name="OCS201">BasketID has no symbol (OCS201).</string>
-    <string name="OCS202">No ODType supported for order (OCS202).</string>
-    <string name="OCS203">Invalid market (OCS203).</string>
-    <string name="OCS204">Unknown MsgType (OCS204).</string>
-    <string name="OCS205">Invalid StartDate and EndDate (OCS205).</string>
-    <string name="OCS206">Order status is not canceled (OCS206).</string>
-    <string name="OCS207">Side not supported (OCS207).</string>
-    <string name="OCS208">Invalid symbol price (OCS208).</string>
-    <string name="OCS103">Orders state non replaceable (OCS103).</string>
-    <string name="OCS500">Too late to cancel/replace (OCS500).</string>
-    <string name="OCS501">Orders is expired (OCS501).</string>
-    <string name="OCS502">Unsupported status to replace (OCS502).</string>
-    <string name="OCS503">Order already in Pending Cancel or Pending Replace status (OCS503).</string>
-    <string name="OCS504">Unable to process Order Mass Cancel Request (OCS504).</string>
-    <string name="OCS505">OrigOrdModTime (586) did not match last TransactTime (60) of order (OCS505).</string>
-    <string name="OCS506">Duplicate ClOrdID (11) received (OCS506).</string>
-    <string name="OCS507">Price exceeds current price (OCS507).</string>
-    <string name="OCS508">Price exceeds current price band (OCS508).</string>
-    <string name="OCS509">Invalid price incremen (OCS509).</string>
-    <string name="OCS510">Invalid algo parameters (OCS510).</string>
-    <string name="OCS511">Opposite order existed (OCS511).</string>
+    <string name="OCS201">BasketID has no symbol. %s (OCS201).</string>
+    <string name="OCS202">No ODType supported for order. %s (OCS202).</string>
+    <string name="OCS203">Invalid market. %s (OCS203).</string>
+    <string name="OCS204">Unknown MsgType. %s (OCS204).</string>
+    <string name="OCS205">Invalid StartDate and EndDate. %s (OCS205).</string>
+    <string name="OCS206">Order status is not canceled. %s (OCS206).</string>
+    <string name="OCS207">Side not supported. %s (OCS207).</string>
+    <string name="OCS208">Invalid symbol price. %s (OCS208).</string>
+    <string name="OCS103">Orders state non replaceable. %s (OCS103).</string>
+    <string name="OCS500">Too late to cancel/replace. %s (OCS500).</string>
+    <string name="OCS501">Orders is expired. %s (OCS501).</string>
+    <string name="OCS502">Unsupported status to replace. %s (OCS502).</string>
+    <string name="OCS503">Order already in Pending Cancel or Pending Replace status. %s (OCS503).</string>
+    <string name="OCS504">Unable to process Order Mass Cancel Request. %s (OCS504).</string>
+    <string name="OCS505">OrigOrdModTime (586) did not match last TransactTime (60) of order. %s (OCS505).</string>
+    <string name="OCS506">Duplicate ClOrdID (11) received. %s (OCS506).</string>
+    <string name="OCS507">Price exceeds current price. %s (OCS507).</string>
+    <string name="OCS508">Price exceeds current price band. %s (OCS508).</string>
+    <string name="OCS509">Invalid price incremen. %s (OCS509).</string>
+    <string name="OCS510">Invalid algo parameters. %s (OCS510).</string>
+    <string name="OCS511">Opposite order existed. %s (OCS511).</string>
     <!--  endregion  -->
 
     <!--  region OXS  -->
-    <string name="OXS1001">Unknown symbol (OXS1001).</string>
-    <string name="OXS1002">Exchange closed (OXS1002).</string>
-    <string name="OXS1003">Order exceeds limit (OXS1003).</string>
-    <string name="OXS1004">Too late to enter (OXS1004).</string>
-    <string name="OXS1005">Unknown order (OXS1005).</string>
-    <string name="OXS1006">Duplicate Order (e.g. dupe ClOrdID) (OXS1006).</string>
-    <string name="OXS1007">Duplicate of a verbally communicated order (OXS1007).</string>
-    <string name="OXS1008">Stale order (OXS1008).</string>
-    <string name="OXS1009">Trade along required (OXS1009).</string>
-    <string name="OXS1010">Invalid Investor ID (OXS1010).</string>
-    <string name="OXS1012">Surveillance option (OXS1012).</string>
-    <string name="OXS1013">Incorrect quantity (OXS1013).</string>
-    <string name="OXS1014">Incorrect allocated quantity (OXS1014).</string>
-    <string name="OXS1015">Unknown account (OXS1015).</string>
-    <string name="OXS1016">Price exceeds current price band (OXS1016).</string>
-    <string name="OXS1018">Invalid price increment (OXS1018).</string>
-    <string name="OXS1022">Short sell not permitted (OXS1022).</string>
-    <string name="OXS9000">Too late to cancel/replace (OXS9000).</string>
-    <string name="OXS9001">Unknown order (OXS9001).</string>
-    <string name="OXS9002">Broker / Exchange Option (OXS9002).</string>
-    <string name="OXS9003">Order already in Pending Cancel or Pending Replace status (OXS9003).</string>
-    <string name="OXS9004">Unable to process Order Mass Cancel Request (OXS9004).</string>
-    <string name="OXS9005">OrigOrdModTime (586) did not match last TransactTime (60) of order (OXS9005).</string>
-    <string name="OXS9006">Duplicate ClOrdID (11) received (OXS9006).</string>
-    <string name="OXS9007">Price exceeds current price (OXS9007).</string>
-    <string name="OXS9008">Price exceeds current price band (OXS9008).</string>
-    <string name="OXS9018">Invalid price increment (OXS9018).</string>
+    <string name="OXS1001">Unknown symbol. %s (OXS1001).</string>
+    <string name="OXS1002">Exchange closed. %s (OXS1002).</string>
+    <string name="OXS1003">Order exceeds limit. %s (OXS1003).</string>
+    <string name="OXS1004">Too late to enter. %s (OXS1004).</string>
+    <string name="OXS1005">Unknown order. %s (OXS1005).</string>
+    <string name="OXS1006">Duplicate Order (e.g. dupe ClOrdID). %s (OXS1006).</string>
+    <string name="OXS1007">Duplicate of a verbally communicated order. %s (OXS1007).</string>
+    <string name="OXS1008">Stale order. %s (OXS1008).</string>
+    <string name="OXS1009">Trade along required. %s (OXS1009).</string>
+    <string name="OXS1010">Invalid Investor ID. %s (OXS1010).</string>
+    <string name="OXS1012">Surveillance option. %s (OXS1012).</string>
+    <string name="OXS1013">Incorrect quantity. %s (OXS1013).</string>
+    <string name="OXS1014">Incorrect allocated quantity. %s (OXS1014).</string>
+    <string name="OXS1015">Unknown account. %s (OXS1015).</string>
+    <string name="OXS1016">Price exceeds current price band. %s (OXS1016).</string>
+    <string name="OXS1018">Invalid price increment. %s (OXS1018).</string>
+    <string name="OXS1022">Short sell not permitted. %s (OXS1022).</string>
+    <string name="OXS9000">Too late to cancel/replace. %s (OXS9000).</string>
+    <string name="OXS9001">Unknown order. %s (OXS9001).</string>
+    <string name="OXS9002">Broker / Exchange Option. %s (OXS9002).</string>
+    <string name="OXS9003">Order already in Pending Cancel or Pending Replace status. %s (OXS9003).</string>
+    <string name="OXS9004">Unable to process Order Mass Cancel Request. %s (OXS9004).</string>
+    <string name="OXS9005">OrigOrdModTime (586) did not match last TransactTime (60) of order. %s (OXS9005).</string>
+    <string name="OXS9006">Duplicate ClOrdID (11) received. %s (OXS9006).</string>
+    <string name="OXS9007">Price exceeds current price. %s (OXS9007).</string>
+    <string name="OXS9008">Price exceeds current price band. %s (OXS9008).</string>
+    <string name="OXS9018">Invalid price increment. %s (OXS9018).</string>
     <!--  endregion  -->
 
     <!--  region ORS  -->
-    <string name="ORS10001">RType not found (ORS10001).</string>
-    <string name="ORS10002">RType "rType" not supported (ORS10002).</string>
-    <string name="ORS10003">Order "orderID" not found (ORS10003).</string>
-    <string name="ORS10004">Order "orderID" is not RootOrder (ORS10004).</string>
-    <string name="ORS10005">Not permission to view Order "orderID" (ORS10005).</string>
-    <string name="ORS10006">Order "orderID", "clOrdLinkID" not found (ORS10006).</string>
-    <string name="ORS10007">Not permission to get Childs of Order "orderID" (ORS10007).</string>
-    <string name="ORS10008">OrderID is required (ORS10008).</string>
+    <string name="ORS10001">RType not found. %s (ORS10001).</string>
+    <string name="ORS10002">RType "rType" not supported. %s (ORS10002).</string>
+    <string name="ORS10003">Order "orderID" not found. %s (ORS10003).</string>
+    <string name="ORS10004">Order "orderID" is not RootOrder. %s (ORS10004).</string>
+    <string name="ORS10005">Not permission to view Order "orderID". %s (ORS10005).</string>
+    <string name="ORS10006">Order "orderID", "clOrdLinkID" not found. %s (ORS10006).</string>
+    <string name="ORS10007">Not permission to get Childs of Order "orderID". %s (ORS10007).</string>
+    <string name="ORS10008">OrderID is required. %s (ORS10008).</string>
     <!--  endregion  -->
 
     <!--  region ATH  -->
@@ -194,5 +194,11 @@
     <string name="OTA22002">Pass and pin is similar (OTA22002).</string>
     <string name="OTA22003">Invalid password length (OTA22003).</string>
     <string name="OTA22004">Old pass is similar new pass (OTA22004).</string>
+    <!--  endregion  -->
+
+    <!--  region MISC.  -->
+    <string name="MISC100000">FormatArgs string. %s (MISC100000).</string>
+    <string name="MISC100001">FormatArgs int %d, FormatArgs string %s (MISC100001).</string>
+    <string name="MISC100002">FormatArgs float %.2f, FormatArgs string %s, FormatArgs int %d (MISC100002).</string>
     <!--  endregion  -->
 </resources>

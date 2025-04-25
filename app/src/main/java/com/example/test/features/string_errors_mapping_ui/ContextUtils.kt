@@ -31,10 +31,15 @@ fun Context.getLocalizedString(resId: Int, locale: Locale): String {
     return localizedContext.getString(resId)
 }
 
-fun Context.getErrorStringFOByCode(code: Int?, isOMS: Boolean = false): String {
+fun Context.getErrorStringFOByCode(
+    code: String?,
+    isOMS: Boolean = false,
+    vararg formatArgs: Any?
+): String {
+    val intCode = code?.toIntOrNull()
     if (code == null) return ""
 
-    val prefix = when (code) {
+    val prefix = when (intCode) {
         in 0..99 -> if (isOMS) "OMS" else "ATH"
         in 100..200 -> "OMS"
         in 201..999 -> "OCS"
@@ -50,16 +55,22 @@ fun Context.getErrorStringFOByCode(code: Int?, isOMS: Boolean = false): String {
     }
 
     return try {
-        val fieldName = "$prefix$code"
+        val fieldName = "$prefix$intCode"
         val field = R.string::class.java.getDeclaredField(fieldName)
         val resId = field.getInt(null)
-        this.getString(resId)
+
+        if (formatArgs.isNotEmpty()) {
+            if (prefix in listOf("OMS", "OCS", "OXS", "ORS")) this.getString(resId, *formatArgs)
+            else this.getString(resId)
+        } else {
+            this.getString(resId)
+        }
     } catch (e: NoSuchFieldException) {
         e.printStackTrace()
-        ""
+        prefix
     } catch (e: Exception) {
         e.printStackTrace()
-        ""
+        prefix
     }
 }
 

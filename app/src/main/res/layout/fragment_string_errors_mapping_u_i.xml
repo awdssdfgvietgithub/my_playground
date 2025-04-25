@@ -16,6 +16,35 @@
         android:textColor="@color/black"
         android:textSize="14sp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_string_arg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input string arg (optional)"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edit_text_int_arg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input int arg (optional)"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edit_text_float_arg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input float arg (optional)"
+            android:inputType="numberDecimal"
+            android:textSize="14sp" />
+    </LinearLayout>
+
     <CheckBox
         android:id="@+id/check_box_oms"
         android:layout_width="wrap_content"
