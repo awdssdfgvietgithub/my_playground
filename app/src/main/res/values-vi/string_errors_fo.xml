@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--https://docs.google.com/spreadsheets/d/1ltvZSas_8YoIa49p562ne66vlXSGmBkKUfPSsBwW4TU/edit?gid=2049837297#gid=2049837297-->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="Typos">
-    <!--  region OMS  -->
+    <!--  region OMS (0-200) -->
     <string name="OMS0">Lỗi không xác định. %s (OMS0).</string>
     <string name="OMS1">Mã CK không tồn tại. %s (OMS1).</string>
     <string name="OMS3">Lệnh vượt KL cho phép. %s (OMS3).</string>
@@ -33,6 +33,7 @@
     <string name="OMS100">Too late to cancel. %s (OMS100).</string>
     <string name="OMS101">Lệnh không đúng phiên. %s (OMS101).</string>
     <string name="OMS102">Sai thông tin lệnh sửa. %s (OMS102).</string>
+    <string name="OMS103">Lệnh ở trạng thái không thể sửa được (2,3,4,8,C). %s (OMS103).</string>
     <string name="OMS104">Tồn tại lệnh đối ứng chưa khớp. %s (OMS104).</string>
     <string name="OMS105">Sai lô lệnh. %s (OMS105).</string>
     <string name="OMS106">Thành viên bị chỉ giao dịch. %s (OMS106).</string>
@@ -40,7 +41,7 @@
     <string name="OMS108">Tài khoản bị lỗi. %s (OMS108).</string>
     <!--  endregion  -->
 
-    <!--  region OCS  -->
+    <!--  region OCS (201-999)  -->
     <string name="OCS201">Rổ chứng khoán chưa có mã nào. %s (OCS201).</string>
     <string name="OCS202">No ODType supported for order. %s (OCS202).</string>
     <string name="OCS203">Sai thông tin Market. %s (OCS203).</string>
@@ -49,7 +50,12 @@
     <string name="OCS206">Lệnh ở trạng thái không thể hủy. %s (OCS206).</string>
     <string name="OCS207">Side không được hỗ trợ. %s (OCS207).</string>
     <string name="OCS208">Giá của chứng khoán không hợp lệ. %s (OCS208).</string>
-    <string name="OCS103">Lệnh ở trạng thái không thể sửa được (2,3,4,8,C). %s (OCS103).</string>
+    <string name="OCS209">Mã không nằm trong danh mục. %s (OCS209).</string>
+    <string name="OCS210">Vượt quá giới hạn ký quỹ. %s (OCS210).</string>
+    <string name="OCS211">Vượt quá giới hạn ký quỹ của mã. %s (OCS211).</string>
+    <string name="OCS212">Tài khoản chưa có rổ ký quỹ. %s (OCS212).</string>
+    <string name="OCS213">Rổ ký quỹ không được phép giao dịch. %s (OCS213).</string>
+    <string name="OCS214">Tài khoản không được phép giao dịch. %s (OCS214).</string>
     <string name="OCS500">Lệnh ở phiên không thể hủy/sửa được. %s (OCS500).</string>
     <string name="OCS501">Lệnh đã hết hiệu lực. %s (OCS501).</string>
     <string name="OCS502">Không hỗ trợ sửa ở trạng thái này. %s (OCS502).</string>
@@ -64,7 +70,7 @@
     <string name="OCS511">Lệnh đối ứng đã tồn tại. %s (OCS511).</string>
     <!--  endregion  -->
 
-    <!--  region OXS  -->
+    <!--  region OXS (1000-9999)  -->
     <string name="OXS1001">Mã CK không tồn tại. %s (OXS1001).</string>
     <string name="OXS1002">Sở đã đóng cửa. %s (OXS1002).</string>
     <string name="OXS1003">Lệnh vượt KL cho phép. %s (OXS1003).</string>
@@ -94,7 +100,139 @@
     <string name="OXS9018">Không đúng bước giá. %s (OXS9018).</string>
     <!--  endregion  -->
 
-    <!--  region ORS  -->
+    <!--  region OXS - KRX (9xxxx)  -->
+    <string name="OXS90101">Trước giờ giao dịch. %s (OXS90101).</string>
+    <string name="OXS90102">Sau giờ giao dịch. %s (OXS90102).</string>
+    <string name="OXS90104">Ngưng nhận lệnh cho mã chứng khoán. %s (OXS90104).</string>
+    <string name="OXS90112">Lỗi định dạng ID lệnh. %s (OXS90112).</string>
+    <string name="OXS90201">Lỗi mã chứng khoán. %s (OXS90201).</string>
+    <string name="OXS90202">Lỗi bên mua/ bán. %s (OXS90202).</string>
+    <string name="OXS90203">Lỗi số tài khoản. %s (OXS90203).</string>
+    <string name="OXS90204">Lỗi ngày. %s (OXS90204).</string>
+    <string name="OXS90206">Lỗi ID lệnh. %s (OXS90206).</string>
+    <string name="OXS90207">Lỗi trùng ID lệnh. %s (OXS90207).</string>
+    <string name="OXS90210">Lỗi ngày hết hạn GTD. %s (OXS90210).</string>
+    <string name="OXS90213">ID lệnh bị trùng lặp do quá trình phát lại. %s (OXS90213).</string>
+    <string name="OXS90301">Vi phạm giới hạn giá. %s (OXS90301).</string>
+    <string name="OXS90302">Lỗi giá. %s (OXS90302).</string>
+    <string name="OXS90303">Lỗi đơn vị giá. %s (OXS90303).</string>
+    <string name="OXS90306">Vi phạm giới hạn giá động. %s (OXS90306).</string>
+    <string name="OXS90307">Lỗi giá điều kiện. %s (OXS90307).</string>
+    <string name="OXS90401">Lỗi giới hạn khối lượng lệnh. %s (OXS90401).</string>
+    <string name="OXS90402">Lỗi khối lượng lệnh. %s (OXS90402).</string>
+    <string name="OXS90403">Lỗi khối lượng công bố. %s (OXS90403).</string>
+    <string name="OXS90404">Lỗi OpenCloseRequest. %s (OXS90404).</string>
+    <string name="OXS90501">Mã chứng khoán bị tạm ngưng giao dịch. %s (OXS90501).</string>
+    <string name="OXS90502">Thị trường bị tạm ngưng giao dịch. %s (OXS90502).</string>
+    <string name="OXS90503">Ngày giao dịch cuối cùng của chứng khoán đã đóng cửa. %s (OXS90503).</string>
+    <string name="OXS90504">Sửa/ Hủy lệnh không được cho phép trong vòng 1 phút trước khi thực hiện khớp lệnh. %s (OXS90504).</string>
+    <string name="OXS90505">CB đã được kích hoạt. %s (OXS90505).</string>
+    <string name="OXS90506">Không cho phép nhập lệnh Spread Instrument. %s (OXS90506).</string>
+    <string name="OXS90508">Không cho phép nhập lệnh khi chứng khoán không có giá tham chiếu. %s (OXS90508).</string>
+    <string name="OXS90601">Lỗi khách hàng/ tự doanh. %s (OXS90601).</string>
+    <string name="OXS90602">Lỗi mã quốc gia. %s (OXS90602).</string>
+    <string name="OXS90603">Lỗi loại nhà đầu tư. %s (OXS90603).</string>
+    <string name="OXS90604">Lỗi loại nhà đầu tư trong nước/ nước ngoài. %s (OXS90604).</string>
+    <string name="OXS90605">Lỗi mã giao dịch thỏa thuận giữa nhà đầu tư trong nước/ nước ngoài. %s (OXS90605).</string>
+    <string name="OXS90701">Lỗi loại lệnh. %s (OXS90701).</string>
+    <string name="OXS90702">Lỗi điều kiện lệnh. %s (OXS90702).</string>
+    <string name="OXS90704">Lỗi loại lệnh giới hạn trên/dưới. %s (OXS90704).</string>
+    <string name="OXS90705">Lỗi loại lệnh trong phiên khớp lệnh định kỳ kéo dài. %s (OXS90705).</string>
+    <string name="OXS90706">Lỗi điều kiện lệnh trong phiên khớp lệnh định kỳ kéo dài. %s (OXS90706).</string>
+    <string name="OXS90801">Lỗi lệnh sửa/ hủy. %s (OXS90801).</string>
+    <string name="OXS90802">ID lệnh gốc bị mất. %s (OXS90802).</string>
+    <string name="OXS90803">ID lệnh gốc không tồn tại. %s (OXS90803).</string>
+    <string name="OXS90804">Không còn khối lượng để sửa/ hủy. %s (OXS90804).</string>
+    <string name="OXS90805">Lỗi khối lượng sửa/ hủy. %s (OXS90805).</string>
+    <string name="OXS90806">Sửa/ hủy cho lệnh hủy. %s (OXS90806).</string>
+    <string name="OXS90807">Sửa/ hủy cho lệnh bị từ chối. %s (OXS90807).</string>
+    <string name="OXS90808">Giá lệnh gốc và lệnh sửa giống nhau. %s (OXS90808).</string>
+    <string name="OXS90809">Không thể sửa loại lệnh. %s (OXS90809).</string>
+    <string name="OXS90810">Lỗi số hiệu lệnh gốc. %s (OXS90810).</string>
+    <string name="OXS90811">Vi phạm khối lượng còn lại tối thiểu sau khi hủy lệnh. %s (OXS90811).</string>
+    <string name="OXS90812">Lệnh sửa có chiều mua/bán khác với lệnh gốc. %s (OXS90812).</string>
+    <string name="OXS90813">Lỗi thông tin sửa lệnh. %s (OXS90813).</string>
+    <string name="OXS90901">Lỗi số hiệu Thành viên. %s (OXS90901).</string>
+    <string name="OXS90902">Thành viên/ Tài khoản không được phép giao dịch đối với mã chứng khoán cụ thể. %s (OXS90902).</string>
+    <string name="OXS90907">Vượt quá khối lượng giới hạn được mua dành cho nhà đầu tư nước ngoài. %s (OXS90907).</string>
+    <string name="OXS90908">Thành viên giao dịch bị hạn chế đối với mã chứng khoán cụ thể. %s (OXS90908).</string>
+    <string name="OXS90911">Thành viên giao dịch bị hạn chế. %s (OXS90911).</string>
+    <string name="OXS90912">Lỗi số hiệu Thành viên lưu ký. %s (OXS90912).</string>
+    <string name="OXS91001">Lỗi số hiệu đại diện giao dịch (Trader). %s (OXS91001).</string>
+    <string name="OXS91002">Lỗi số hiệu đại diện giao dịch (Trader) khi thực hiện sửa/ hủy lệnh. %s (OXS91002).</string>
+    <string name="OXS91006">Đại diện giao dịch bị hạn chế đối với mã chứng khoán cụ thể. %s (OXS91006).</string>
+    <string name="OXS91007">Đại diện giao dịch bị hạn chế. %s (OXS91007).</string>
+    <string name="OXS91008">Lỗi số hiệu Thành viên lưu ký không trùng khớp. %s (OXS91008).</string>
+    <string name="OXS91102">Mã chứng khoán không được quy định tạo lập thị trường. %s (OXS91102).</string>
+    <string name="OXS91103">Không tạo lập thị trường nào được quy định cho mã chứng khoán cụ thể. %s (OXS91103).</string>
+    <string name="OXS91104">Lỗi loại lệnh tạo lập thị trường. %s (OXS91104).</string>
+    <string name="OXS91105">Lỗi điều kiện lệnh tạo lập thị trường. %s (OXS91105).</string>
+    <string name="OXS91107">Vi phạm quy tắc khối lượng tối thiểu khi tạo lập thị trường. %s (OXS91107).</string>
+    <string name="OXS91108">Vi phạm quy tắc chênh lệch giá khi tạo lập thị trường. %s (OXS91108).</string>
+    <string name="OXS91109">Vượt quá số lượng cổ phiếu phát hành. %s (OXS91109).</string>
+    <string name="OXS91110">Vượt quá khối lượng cổ phiếu niêm yết. %s (OXS91110).</string>
+    <string name="OXS91111">Vượt quá khối lượng nhà tạo lập thị trường đang nắm giữ. %s (OXS91111).</string>
+    <string name="OXS91115">Lỗi hướng đặt lệnh được phép của lệnh tạo lập thị trường. %s (OXS91115).</string>
+    <string name="OXS91116">Lỗi số hiệu tài khoản lệnh tạo lập thị trường. %s (OXS91116).</string>
+    <string name="OXS91202">Lỗi trùng lập khi khởi tạo lệnh thỏa thuận. %s (OXS91202).</string>
+    <string name="OXS91203">Bên khởi tạo không thể yêu cầu hủy lệnh thỏa thuận trong phiên hiện tại. %s (OXS91203).</string>
+    <string name="OXS91204">Bên đối ứng không thể yêu cầu xác nhận/ từ chối lệnh thỏa thuận trong phiên hiện tại. %s (OXS91204).</string>
+    <string name="OXS91206">Không cho phép nhập lệnh thỏa thuận tại thời điểm hiện tại. %s (OXS91206).</string>
+    <string name="OXS91207">Lệnh thỏa thuận của bên khởi tạo và bên đối ứng không khớp với nhau. %s (OXS91207).</string>
+    <string name="OXS91209">Lỗi số hiệu của lệnh thỏa thuận bên đối ứng. %s (OXS91209).</string>
+    <string name="OXS91224">Lỗi bên mua/ bán của bên khởi tạo lệnh thỏa thuận. %s (OXS91224).</string>
+    <string name="OXS91246">Lỗi giá trị tài sản thế chấp. %s (OXS91246).</string>
+    <string name="OXS91247">Lỗi tỉ lệ Haircut. %s (OXS91247).</string>
+    <string name="OXS91401">Giao dịch không được cho phép với mã chứng khoán. %s (OXS91401).</string>
+    <string name="OXS91405">Giao dịch sau giờ giao dịch không được cho phép vì không có khớp lệnh (hoặc kết thúc ngẫu nhiên phiên khớp lệnh định kỳ đóng cửa đang được kích hoạt). %s (OXS91405).</string>
+    <string name="OXS91410">Không áp dụng cho phiên Buy-in/ Sell-out. %s (OXS91410).</string>
+    <string name="OXS91411">Lỗi trùng lặp của lệnh Buy-in/ Sell-out. %s (OXS91411).</string>
+    <string name="OXS91412">Lỗi khối lượng của lệnh Buy-in/ Sell-out. %s (OXS91412).</string>
+    <string name="OXS91413">Lỗi giá của lệnh Buy-in/ Sell-out. %s (OXS91413).</string>
+    <string name="OXS91501">Lỗi phân loại ký quỹ. %s (OXS91501).</string>
+    <string name="OXS91502">Lệnh ký quỹ không được cho phép với mã chứng khoán. %s (OXS91502).</string>
+    <string name="OXS91503">Lỗi giá lệnh ký quỹ. %s (OXS91503).</string>
+    <string name="OXS91504">Lỗi loại lệnh của lệnh ký quỹ. %s (OXS91504).</string>
+    <string name="OXS91505">Lỗi điều kiện hủy của lệnh ký quỹ. %s (OXS91505).</string>
+    <string name="OXS91506">Lệnh ký quỹ bị hạn chế. %s (OXS91506).</string>
+    <string name="OXS91601">Lỗi về mã ID báo cáo cổ phiếu quỹ. %s (OXS91601).</string>
+    <string name="OXS91602">Lỗi loại giao dịch quỹ. %s (OXS91602).</string>
+    <string name="OXS91603">Lỗi bên mua/ bán trong giao dịch quỹ. %s (OXS91603).</string>
+    <string name="OXS91610">Giao dịch quỹ không cho phép trong phiên hiện tại. %s (OXS91610).</string>
+    <string name="OXS91612">Hủy lệnh giao dịch quỹ không được cho phép trong phiên hiện tại. %s (OXS91612).</string>
+    <string name="OXS91613">Giao dịch cổ phiếu quỹ không được cho phép với mã chứng khoán. %s (OXS91613).</string>
+    <string name="OXS91615">Lỗi loại bán trong giao dịch quỹ. %s (OXS91615).</string>
+    <string name="OXS91616">Lỗi loại lệnh nhà đầu tư trong giao dịch quỹ. %s (OXS91616).</string>
+    <string name="OXS91801">Lỗi mã phân biệt loại bán. %s (OXS91801).</string>
+    <string name="OXS91802">Lỗi giá bán khống. %s (OXS91802).</string>
+    <string name="OXS91803">Lỗi loại lệnh bán khống. %s (OXS91803).</string>
+    <string name="OXS91804">Lỗi điều kiện của lệnh bán khống. %s (OXS91804).</string>
+    <string name="OXS91805">Lệnh bán khống bị hạn chế. %s (OXS91805).</string>
+    <string name="OXS91806">Bán khống không được cho phép đối với mã chứng khoán. %s (OXS91806).</string>
+    <string name="OXS92013">Phiên không cho phép lệnh đấu giá một chiều. %s (OXS92013).</string>
+    <string name="OXS98000">Lỗi mã loại Message. %s (OXS98000).</string>
+    <string name="OXS98001">Lỗi mã RFQ. %s (OXS98001).</string>
+    <string name="OXS98002">Lỗi Quote ID. %s (OXS98002).</string>
+    <string name="OXS98003">Lỗi mã điều kiện công bố của lệnh. %s (OXS98003).</string>
+    <string name="OXS98004">Lệnh khởi tạo không tồn tại. %s (OXS98004).</string>
+    <string name="OXS98005">Lỗi số hiệu quảng cáo thỏa thuận. %s (OXS98005).</string>
+    <string name="OXS98006">Lỗi số hiệu gốc của quảng cáo thỏa thuận. %s (OXS98006).</string>
+    <string name="OXS98007">Lỗi mất số hiệu gốc của quảng cáo thỏa thuận. %s (OXS98007).</string>
+    <string name="OXS98008">Lỗi trùng số hiệu của quảng cáo thỏa thuận. %s (OXS98008).</string>
+    <string name="OXS98009">Không tồn tại số hiệu gốc của quảng cáo thỏa thuận. %s (OXS98009).</string>
+    <string name="OXS98010">Quảng cáo thỏa thuận bị từ chối. %s (OXS98010).</string>
+    <string name="OXS98011">Quảng cáo thỏa thuận đã bị hủy. %s (OXS98011).</string>
+    <string name="OXS98012">Quảng cáo thỏa thuận không hợp lệ. %s (OXS98012).</string>
+    <string name="OXS98013">Lỗi không khớp thông tin bên mua/ bán giữa quảng cáo và giao dịch thỏa thuận. %s (OXS98013).</string>
+    <string name="OXS98014">Lỗi không khớp thông tin về giá giữa quảng cáo và giao dịch thỏa thuận. %s (OXS98014).</string>
+    <string name="OXS98015">Lỗi không khớp thông tin về khối lượng giữa quảng cáo và giao dịch thỏa thuận. %s (OXS98015).</string>
+    <string name="OXS98016">Lỗi không khớp thông tin về số hiệu thành viên giữa quảng cáo và giao dịch thỏa thuận. %s (OXS98016).</string>
+    <string name="OXS98017">Lỗi không khớp thông tin về tỉ lệ haircut giữa quảng cáo và giao dịch thỏa thuận. %s (OXS98017).</string>
+    <string name="OXS98018">Lỗi không khớp thông tin về giá trị tài sản thế chấp giữa quảng cáo và giao dịch thỏa thuận. %s (OXS98018).</string>
+    <string name="OXS99998">Lỗi riêng đối với mã chứng khoán. %s (OXS99998).</string>
+    <!--  endregion  -->
+
+    <!--  region ORS (10000-19999)  -->
     <string name="ORS10001">RType không tìm thấy. %s (ORS10001).</string>
     <string name="ORS10002">Không hỗ trợ rType. %s (ORS10002).</string>
     <string name="ORS10003">Lệnh không tồn tại. %s (ORS10003).</string>
@@ -105,7 +243,7 @@
     <string name="ORS10008">OrderID là bắt buộc. %s (ORS10008).</string>
     <!--  endregion  -->
 
-    <!--  region ATH  -->
+    <!--  region ATH (5xxxx, 200xx, 0-99)  -->
     <string name="ATH1">Lỗi không xác định (ATH1).</string>
     <string name="ATH2">Sai định dạng request (ATH2).</string>
     <string name="ATH3">Request thiếu RType (ATH3).</string>
@@ -145,7 +283,7 @@
     <string name="ATH50004">Yêu cầu nhập mã xác nhận (ATH50004).</string>
     <!--  endregion  -->
 
-    <!--  region CMM  -->
+    <!--  region CMM (30000-39999)  -->
     <string name="CMM30001">Tham số không được phép sửa (CMM30001).</string>
     <string name="CMM30002">Không phải ngày nghỉ: %s (CMM30002).</string>
     <string name="CMM30003">Trường Type là bắt buộc (CMM30003).</string>
@@ -154,7 +292,7 @@
     <string name="CMM30006">StartDate và EndDate phải sau ngày hiện tại (CMM30006).</string>
     <!--  endregion  -->
 
-    <!--  region OIS  -->
+    <!--  region OIS (40000-49999)  -->
     <string name="OIS40001">Tài khoản không tồn tại (OIS40001).</string>
     <string name="OIS40002">Sub Account không tồn tại (OIS40002).</string>
     <string name="OIS40003">Loại tài sản không tồn tại (OIS40003).</string>
@@ -166,9 +304,17 @@
     <string name="OIS40010">Phải nhập mã sàn (ExDestination) (OIS40010).</string>
     <string name="OIS40012">Tham số "basketID" không tồn tại (OIS40012).</string>
     <string name="OIS40013">Không tồn tại mã chứng khoán (OIS40013).</string>
+    <string name="OIS40014">Loại giao dịch không hợp lệ. %s (OIS40014).</string>
+    <string name="OIS40015">Mã không hợp lệ. %s (OIS40015).</string>
+    <string name="OIS40016">Giá trị không hợp lệ. %s (OIS40016).</string>
+    <string name="OIS40017">Vượt quá giá trị cho phép. %s (OIS40017).</string>
+    <string name="OIS40018">Yêu cầu nhập loại giao dịch. %s (OIS40018).</string>
+    <string name="OIS40019">Yêu cầu nhập loại lệnh. %s (OIS40019).</string>
+    <string name="OIS40020">Yêu cầu nhập số lượng. %s (OIS40020).</string>
+    <string name="OIS40021">Yêu cầu nhập giá. %s (OIS40021).</string>
     <!--  endregion  -->
 
-    <!--  region FOU  -->
+    <!--  region FOU (21xxx)  -->
     <string name="FOU21000">Thành viên không hợp lệ (FOU21000).</string>
     <string name="FOU21001">Quản lý không hợp lệ (FOU21001).</string>
     <string name="FOU21002">Yêu cầu nhập tài khoản (FOU21002).</string>
@@ -188,17 +334,11 @@
     <string name="FOU21016">Yêu cầu mã dịch vụ (FOU21016).</string>
     <!--  endregion  -->
 
-    <!--  region OTA  -->
+    <!--  region OTA (22xxx)  -->
     <string name="OTA22000">Chưa đăng ký cài đặt thông báo (OTA22000).</string>
     <string name="OTA22001">Người dùng không tồn tại (OTA22001).</string>
     <string name="OTA22002">Mật khẩu và pin tương tự nhau (OTA22002).</string>
     <string name="OTA22003">Độ dài mật khẩu không hợp lệ (OTA22003).</string>
     <string name="OTA22004">Mật khẩu mới không được giống mật khẩu cũ (OTA22004).</string>
-    <!--  endregion  -->
-
-    <!--  region MISC.  -->
-    <string name="MISC100000">FormatArgs string. %s (MISC100000).</string>
-    <string name="MISC100001">FormatArgs int %d, FormatArgs string %s (MISC100001).</string>
-    <string name="MISC100002">FormatArgs float %.2f, FormatArgs string %s, FormatArgs int %d (MISC100002).</string>
     <!--  endregion  -->
 </resources>

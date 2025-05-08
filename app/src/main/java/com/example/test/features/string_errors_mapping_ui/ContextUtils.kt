@@ -43,7 +43,7 @@ fun Context.getErrorStringFOByCode(
         in 0..99 -> if (isOMS) "OMS" else "ATH"
         in 100..200 -> "OMS"
         in 201..999 -> "OCS"
-        in 1000..9999 -> "OXS"
+        in 1000..9999, in 90000..99999 -> "OXS"
         in 10000..19999 -> "ORS"
         in 20000..20999, in 50000..59999 -> "ATH"
         in 30000..39999 -> "CMM"

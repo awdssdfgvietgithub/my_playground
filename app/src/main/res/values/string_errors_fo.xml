@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--https://docs.google.com/spreadsheets/d/1ltvZSas_8YoIa49p562ne66vlXSGmBkKUfPSsBwW4TU/edit?gid=2049837297#gid=2049837297-->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="Typos">
-    <!--  region OMS  -->
+    <!--  region OMS (0-200) -->
     <string name="OMS0">Broker / Exchange option. %s (OMS0).</string>
     <string name="OMS1">Unknown symbol. %s (OMS1).</string>
     <string name="OMS3">Order exceeds limit. %s (OMS3).</string>
@@ -33,6 +33,7 @@
     <string name="OMS100">Too late to cancel. %s (OMS100).</string>
     <string name="OMS101">Invalid Trading Session For Order. %s (OMS101).</string>
     <string name="OMS102">Incorrect cancel replace information provided. %s (OMS102).</string>
+    <string name="OMS103">Orders state non replaceable. %s (OMS103).</string>
     <string name="OMS104">Opposite Trade Pending. %s (OMS104).</string>
     <string name="OMS105">Different quantity lot. %s (OMS105).</string>
     <string name="OMS106">Trader Suspended. %s (OMS106).</string>
@@ -40,7 +41,7 @@
     <string name="OMS108">Account Error. %s (OMS108).</string>
     <!--  endregion  -->
 
-    <!--  region OCS  -->
+    <!--  region OCS (201-999)  -->
     <string name="OCS201">BasketID has no symbol. %s (OCS201).</string>
     <string name="OCS202">No ODType supported for order. %s (OCS202).</string>
     <string name="OCS203">Invalid market. %s (OCS203).</string>
@@ -49,7 +50,12 @@
     <string name="OCS206">Order status is not canceled. %s (OCS206).</string>
     <string name="OCS207">Side not supported. %s (OCS207).</string>
     <string name="OCS208">Invalid symbol price. %s (OCS208).</string>
-    <string name="OCS103">Orders state non replaceable. %s (OCS103).</string>
+    <string name="OCS209">Symbol is not in contract list. %s (OCS209).</string>
+    <string name="OCS210">Margin Limit exceeds. %s (OCS210).</string>
+    <string name="OCS211">Symbol Margin Limit exceeds. %s (OCS211).</string>
+    <string name="OCS212">Account not setup Margin group. %s (OCS212).</string>
+    <string name="OCS213">Margin group not trade permission. %s (OCS213).</string>
+    <string name="OCS214">Account not trade permission. %s (OCS214).</string>
     <string name="OCS500">Too late to cancel/replace. %s (OCS500).</string>
     <string name="OCS501">Orders is expired. %s (OCS501).</string>
     <string name="OCS502">Unsupported status to replace. %s (OCS502).</string>
@@ -64,7 +70,7 @@
     <string name="OCS511">Opposite order existed. %s (OCS511).</string>
     <!--  endregion  -->
 
-    <!--  region OXS  -->
+    <!--  region OXS (1000-9999)  -->
     <string name="OXS1001">Unknown symbol. %s (OXS1001).</string>
     <string name="OXS1002">Exchange closed. %s (OXS1002).</string>
     <string name="OXS1003">Order exceeds limit. %s (OXS1003).</string>
@@ -94,7 +100,139 @@
     <string name="OXS9018">Invalid price increment. %s (OXS9018).</string>
     <!--  endregion  -->
 
-    <!--  region ORS  -->
+    <!--  region OXS - KRX (9xxxx)  -->
+    <string name="OXS90101">Before trading hours. %s (OXS90101).</string>
+    <string name="OXS90102">After trading hours. %s (OXS90102).</string>
+    <string name="OXS90104">Instrument order receiving halted. %s (OXS90104).</string>
+    <string name="OXS90112">Order ID format error. %s (OXS90112).</string>
+    <string name="OXS90201">Instrument code error. %s (OXS90201).</string>
+    <string name="OXS90202">Buy/Sell side error. %s (OXS90202).</string>
+    <string name="OXS90203">Account number error. %s (OXS90203).</string>
+    <string name="OXS90204">Date error. %s (OXS90204).</string>
+    <string name="OXS90206">Order ID error. %s (OXS90206).</string>
+    <string name="OXS90207">Order ID duplicated. %s (OXS90207).</string>
+    <string name="OXS90210">GTD expiration date error. %s (OXS90210).</string>
+    <string name="OXS90213">Order ID duplicated by retransmission. %s (OXS90213).</string>
+    <string name="OXS90301">Price limit violation. %s (OXS90301).</string>
+    <string name="OXS90302">Price error. %s (OXS90302).</string>
+    <string name="OXS90303">Price unit error. %s (OXS90303).</string>
+    <string name="OXS90306">VI price limit violation. %s (OXS90306).</string>
+    <string name="OXS90307">Conditional price error. %s (OXS90307).</string>
+    <string name="OXS90401">Order quantity limit error. %s (OXS90401).</string>
+    <string name="OXS90402">Order quantity error. %s (OXS90402).</string>
+    <string name="OXS90403">Disclosed quantity error. %s (OXS90403).</string>
+    <string name="OXS90404">OpenCloseRequest error. %s (OXS90404).</string>
+    <string name="OXS90501">Instrument halted. %s (OXS90501).</string>
+    <string name="OXS90502">Market halted. %s (OXS90502).</string>
+    <string name="OXS90503">Last trading day instrument closed. %s (OXS90503).</string>
+    <string name="OXS90504">Amend/Cancel not allowed within 1 minute before EP execution. %s (OXS90504).</string>
+    <string name="OXS90505">CB activated. %s (OXS90505).</string>
+    <string name="OXS90506">Spread instrument order not allowed. %s (OXS90506).</string>
+    <string name="OXS90508">Order not allowed for instrument with no reference price. %s (OXS90508).</string>
+    <string name="OXS90601">Client/House error. %s (OXS90601).</string>
+    <string name="OXS90602">Country code error. %s (OXS90602).</string>
+    <string name="OXS90603">Investor type error. %s (OXS90603).</string>
+    <string name="OXS90604">Domestic/foreign investor type error. %s (OXS90604).</string>
+    <string name="OXS90605">Inter-foreign negotiation code error. %s (OXS90605).</string>
+    <string name="OXS90701">Order type error. %s (OXS90701).</string>
+    <string name="OXS90702">Order condition error. %s (OXS90702).</string>
+    <string name="OXS90704">Upper/Lower limit order type error. %s (OXS90704).</string>
+    <string name="OXS90705">Order type error during auction extension. %s (OXS90705).</string>
+    <string name="OXS90706">Order condition error during auction extension. %s (OXS90706).</string>
+    <string name="OXS90801">Amend/Cancel class error. %s (OXS90801).</string>
+    <string name="OXS90802">Original order ID missing. %s (OXS90802).</string>
+    <string name="OXS90803">Original order not exists. %s (OXS90803).</string>
+    <string name="OXS90804">No amend/cancel remaining quantity. %s (OXS90804).</string>
+    <string name="OXS90805">Amend/Cancel quantity error. %s (OXS90805).</string>
+    <string name="OXS90806">Amend/Cancel for cancel order. %s (OXS90806).</string>
+    <string name="OXS90807">Amend/Cancel for rejected order. %s (OXS90807).</string>
+    <string name="OXS90808">Same price amend not possible. %s (OXS90808).</string>
+    <string name="OXS90809">Amend not possible between specific order types. %s (OXS90809).</string>
+    <string name="OXS90810">Original order ID error. %s (OXS90810).</string>
+    <string name="OXS90811">Violation of min remaining quantity after cancel. %s (OXS90811).</string>
+    <string name="OXS90812">Buy/Sell side for amend not matched. %s (OXS90812).</string>
+    <string name="OXS90813">Amend subject error. %s (OXS90813).</string>
+    <string name="OXS90901">Member number error. %s (OXS90901).</string>
+    <string name="OXS90902">Member/Account not allowed for given instrument. %s (OXS90902).</string>
+    <string name="OXS90907">Exceeds foreigners order quantity limit. %s (OXS90907).</string>
+    <string name="OXS90908">Member trading restricted for given instrument. %s (OXS90908).</string>
+    <string name="OXS90911">Member trading restricted. %s (OXS90911).</string>
+    <string name="OXS90912">Custodian ID error. %s (OXS90912).</string>
+    <string name="OXS91001">Trader number error. %s (OXS91001).</string>
+    <string name="OXS91002">Amend/Cancel order trader number error. %s (OXS91002).</string>
+    <string name="OXS91006">Trader trading restricted for given instrument. %s (OXS91006).</string>
+    <string name="OXS91007">Trader trading restricted. %s (OXS91007).</string>
+    <string name="OXS91008">Custodian ID mismatch error. %s (OXS91008).</string>
+    <string name="OXS91102">Instrument not subjected for MM. %s (OXS91102).</string>
+    <string name="OXS91103">Not MM for given instrument. %s (OXS91103).</string>
+    <string name="OXS91104">MM quote type error. %s (OXS91104).</string>
+    <string name="OXS91105">MM quote condition error. %s (OXS91105).</string>
+    <string name="OXS91107">MM Quote Min Qty Violation. %s (OXS91107).</string>
+    <string name="OXS91108">MM Quote Spread Violation. %s (OXS91108).</string>
+    <string name="OXS91109">Exceeds number of issuing shares. %s (OXS91109).</string>
+    <string name="OXS91110">Exceeds number of listed shares. %s (OXS91110).</string>
+    <string name="OXS91111">Exceeds MM holding quantity. %s (OXS91111).</string>
+    <string name="OXS91115">MM Quote allowed direction error. %s (OXS91115).</string>
+    <string name="OXS91116">Account number error of market making order. %s (OXS91116).</string>
+    <string name="OXS91202">Duplicated negotiation initiator request. %s (OXS91202).</string>
+    <string name="OXS91203">Negotiation initiator cannot request to cancel in current session. %s (OXS91203).</string>
+    <string name="OXS91204">Counterparty cannot approve/reject negotiation in current session. %s (OXS91204).</string>
+    <string name="OXS91206">Negotiation not allowed at this time. %s (OXS91206).</string>
+    <string name="OXS91207">Negotiation request/response not matched. %s (OXS91207).</string>
+    <string name="OXS91209">Counterparty order number input error. %s (OXS91209).</string>
+    <string name="OXS91224">Negotiation initiator buy/sell side error. %s (OXS91224).</string>
+    <string name="OXS91246">Collateral value error. %s (OXS91246).</string>
+    <string name="OXS91247">Repo haircut ratio error. %s (OXS91247).</string>
+    <string name="OXS91401">Trading not allowed for instrument. %s (OXS91401).</string>
+    <string name="OXS91405">Off-hours trading not allowed due to no execution or closing price auction re-activated. %s (OXS91405).</string>
+    <string name="OXS91410">Not applicable for Buy-In/Sell-Out session. %s (OXS91410).</string>
+    <string name="OXS91411">Duplicate Buy-In/Sell-Out order error. %s (OXS91411).</string>
+    <string name="OXS91412">Order quantity error of Buy-In/Sell-Out order. %s (OXS91412).</string>
+    <string name="OXS91413">Order price error of Buy-In/Sell-Out order. %s (OXS91413).</string>
+    <string name="OXS91501">Margin class error. %s (OXS91501).</string>
+    <string name="OXS91502">Margin order not allowed for instrument. %s (OXS91502).</string>
+    <string name="OXS91503">Margin order price error. %s (OXS91503).</string>
+    <string name="OXS91504">Margin order type error. %s (OXS91504).</string>
+    <string name="OXS91505">Margin order condition error. %s (OXS91505).</string>
+    <string name="OXS91506">Margin order input restricted. %s (OXS91506).</string>
+    <string name="OXS91601">Treasury report ID error. %s (OXS91601).</string>
+    <string name="OXS91602">Treasury trading method error. %s (OXS91602).</string>
+    <string name="OXS91603">Treasury buy/sell side error. %s (OXS91603).</string>
+    <string name="OXS91610">Treasury order not allowed in current session. %s (OXS91610).</string>
+    <string name="OXS91612">Treasury cancel order not allowed in current session. %s (OXS91612).</string>
+    <string name="OXS91613">Treasury stock trading is not allowed for the instrument. %s (OXS91613).</string>
+    <string name="OXS91615">Treasury order sell type code error. %s (OXS91615).</string>
+    <string name="OXS91616">Treasury order investor type error. %s (OXS91616).</string>
+    <string name="OXS91801">Sell type code error. %s (OXS91801).</string>
+    <string name="OXS91802">Short selling order price error. %s (OXS91802).</string>
+    <string name="OXS91803">Short selling order type error. %s (OXS91803).</string>
+    <string name="OXS91804">Short selling order condition error. %s (OXS91804).</string>
+    <string name="OXS91805">Short selling order input restricted. %s (OXS91805).</string>
+    <string name="OXS91806">Short selling is not allowed for the instrument. %s (OXS91806).</string>
+    <string name="OXS92013">Session does not allow one-sided auction orders. %s (OXS92013).</string>
+    <string name="OXS98000">Message type code error. %s (OXS98000).</string>
+    <string name="OXS98001">RFQ code error. %s (OXS98001).</string>
+    <string name="OXS98002">Quote ID error. %s (OXS98002).</string>
+    <string name="OXS98003">Order disclosure condition code error. %s (OXS98003).</string>
+    <string name="OXS98004">Initiator order does not exist. %s (OXS98004).</string>
+    <string name="OXS98005">IOI ID error. %s (OXS98005).</string>
+    <string name="OXS98006">Original IOI ID error. %s (OXS98006).</string>
+    <string name="OXS98007">Missing original IOI ID. %s (OXS98007).</string>
+    <string name="OXS98008">Duplicated IOI ID. %s (OXS98008).</string>
+    <string name="OXS98009">Original IOI ID does not exist. %s (OXS98009).</string>
+    <string name="OXS98010">Rejected IOI. %s (OXS98010).</string>
+    <string name="OXS98011">Cancelled IOI. %s (OXS98011).</string>
+    <string name="OXS98012">Invalid IOI. %s (OXS98012).</string>
+    <string name="OXS98013">Buy/Sell side mismatch between IOI and put-through order. %s (OXS98013).</string>
+    <string name="OXS98014">Order price mismatch between IOI and put-through order. %s (OXS98014).</string>
+    <string name="OXS98015">Order quantity mismatch between IOI and put-through order. %s (OXS98015).</string>
+    <string name="OXS98016">Trader number mismatch between IOI and put-through order. %s (OXS98016).</string>
+    <string name="OXS98017">Repo haircut ratio mismatch between IOI and put-through order. %s (OXS98017).</string>
+    <string name="OXS98018">Collateral value mismatch between IOI and put-through order. %s (OXS98018).</string>
+    <string name="OXS99998">Individual instrument failure. %s (OXS99998).</string>
+    <!--  endregion  -->
+
+    <!--  region ORS (10000-19999)  -->
     <string name="ORS10001">RType not found. %s (ORS10001).</string>
     <string name="ORS10002">RType "rType" not supported. %s (ORS10002).</string>
     <string name="ORS10003">Order "orderID" not found. %s (ORS10003).</string>
@@ -105,7 +243,7 @@
     <string name="ORS10008">OrderID is required. %s (ORS10008).</string>
     <!--  endregion  -->
 
-    <!--  region ATH  -->
+    <!--  region ATH (5xxxx, 200xx, 0-99)  -->
     <string name="ATH1">Exception (ATH1).</string>
     <string name="ATH2">Wrong Format Req (ATH2).</string>
     <string name="ATH3">Request without RType (ATH3).</string>
@@ -145,7 +283,7 @@
     <string name="ATH50004">Confirmation code is required (ATH50004).</string>
     <!--  endregion  -->
 
-    <!--  region CMM  -->
+    <!--  region CMM (30000-39999)  -->
     <string name="CMM30001">Parameter is readonly cannot update (CMM30001).</string>
     <string name="CMM30002">Date %s is not a day off (CMM30002).</string>
     <string name="CMM30003">Type is required (CMM30003).</string>
@@ -154,7 +292,7 @@
     <string name="CMM30006">StartDate and EndDate must after current date (CMM30006).</string>
     <!--  endregion  -->
 
-    <!--  region OIS  -->
+    <!--  region OIS (40000-49999)  -->
     <string name="OIS40001">Account "accID" not found (OIS40001).</string>
     <string name="OIS40002">SubAccountID "subAccID" of Account id "accID" not found (OIS40002).</string>
     <string name="OIS40003">Asset not found (OIS40003).</string>
@@ -166,9 +304,17 @@
     <string name="OIS40010">ExDestination not found (OIS40010).</string>
     <string name="OIS40012">Basket not "basketID" not existed (OIS40012).</string>
     <string name="OIS40013">Symbol "symbol" not existed (OIS40013).</string>
+    <string name="OIS40014">Transaction type not valid. %s (OIS40014).</string>
+    <string name="OIS40015">Symbol not valid. %s (OIS40015).</string>
+    <string name="OIS40016">Invalid value. %s (OIS40016).</string>
+    <string name="OIS40017">Exceed value. %s (OIS40017).</string>
+    <string name="OIS40018">Side required. %s (OIS40018).</string>
+    <string name="OIS40019">Order type required. %s (OIS40019).</string>
+    <string name="OIS40020">Quantity required. %s (OIS40020).</string>
+    <string name="OIS40021">Price required. %s (OIS40021).</string>
     <!--  endregion  -->
 
-    <!--  region FOU  -->
+    <!--  region FOU (21xxx)  -->
     <string name="FOU21000">Invalid Member (FOU21000).</string>
     <string name="FOU21001">Invalid Manager (FOU21001).</string>
     <string name="FOU21002">Request Account (FOU21002).</string>
@@ -188,17 +334,11 @@
     <string name="FOU21016">Service code required (FOU21016).</string>
     <!--  endregion  -->
 
-    <!--  region OTA  -->
+    <!--  region OTA (22xxx)  -->
     <string name="OTA22000">Has not registered notify setting (OTA22000).</string>
     <string name="OTA22001">Authenticate user not loaded (OTA22001).</string>
     <string name="OTA22002">Pass and pin is similar (OTA22002).</string>
     <string name="OTA22003">Invalid password length (OTA22003).</string>
     <string name="OTA22004">Old pass is similar new pass (OTA22004).</string>
-    <!--  endregion  -->
-
-    <!--  region MISC.  -->
-    <string name="MISC100000">FormatArgs string. %s (MISC100000).</string>
-    <string name="MISC100001">FormatArgs int %d, FormatArgs string %s (MISC100001).</string>
-    <string name="MISC100002">FormatArgs float %.2f, FormatArgs string %s, FormatArgs int %d (MISC100002).</string>
     <!--  endregion  -->
 </resources>
