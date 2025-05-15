@@ -49,9 +49,10 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_section"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="300dp"
             android:clipToPadding="false"
             android:orientation="horizontal"
+            android:nestedScrollingEnabled="false"
             android:paddingStart="20dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/item_basic" />

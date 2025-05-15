@@ -17,7 +17,7 @@ class AdvancedRecyclerViewFragment : Fragment() {
     private var _binding: FragmentAdvancedRecyclerViewBinding? = null
     private val binding get() = _binding!!
     private val viewModel: AdvancedRecyclerViewViewModel by viewModels()
-    private val mAdapter = PostListAdapter()
+    private lateinit var mAdapter: PostListAdapter
     private val linearLayoutManager = LinearLayoutManager(context)
     private var endlessScrollListener: EndlessRecyclerViewScrollListenerKL? = null
     private var pageIndex = 1
@@ -58,6 +58,9 @@ class AdvancedRecyclerViewFragment : Fragment() {
     }
 
     private fun setupRecyclerView() {
+        mAdapter = PostListAdapter{ position ->
+            linearLayoutManager.scrollToPositionWithOffset(position, 0)
+        }
         endlessScrollListener = object : EndlessRecyclerViewScrollListenerKL(
             linearLayoutManager,
             5

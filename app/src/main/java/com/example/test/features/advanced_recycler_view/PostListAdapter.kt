@@ -1,5 +1,6 @@
 package com.example.test.features.advanced_recycler_view
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.test.databinding.ItemLoadingBinding
 import com.example.test.databinding.ItemPostV1Binding
 
-class PostListAdapter : RecyclerView.Adapter<PostListAdapter.ViewHolder>() {
+class PostListAdapter(
+    private val onItemClick: (position: Int) -> Unit
+) : RecyclerView.Adapter<PostListAdapter.ViewHolder>() {
     companion object {
         private const val VIEW_TYPE_ITEM = 0
         private const val VIEW_TYPE_LOADING = 1
@@ -19,7 +22,8 @@ class PostListAdapter : RecyclerView.Adapter<PostListAdapter.ViewHolder>() {
     private var oldData = arrayListOf<PostDTO>()
 
     fun setData(newData: ArrayList<PostDTO>) {
-        val filteredData = newData.filter { it.id != -1 }.toCollection(ArrayList()) // Exclude the loading item if present
+        val filteredData = newData.filter { it.id != -1 }
+            .toCollection(ArrayList()) // Exclude the loading item if present
         val diffUtil = MyDiffUtil(oldData, filteredData)
         val diffResult = DiffUtil.calculateDiff(diffUtil)
         oldData = ArrayList(filteredData)
@@ -57,7 +61,7 @@ class PostListAdapter : RecyclerView.Adapter<PostListAdapter.ViewHolder>() {
         } else {
             val binding =
                 ItemPostV1Binding.inflate(LayoutInflater.from(parent.context), parent, false)
-            ViewHolder.ItemViewHolder(binding)
+            ViewHolder.ItemViewHolder(binding, onItemClick)
         }
     }
 
@@ -72,8 +76,16 @@ class PostListAdapter : RecyclerView.Adapter<PostListAdapter.ViewHolder>() {
 
     sealed class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        class ItemViewHolder(private val binding: ItemPostV1Binding) :
+        class ItemViewHolder(private val binding: ItemPostV1Binding, private val onItemClick: (position: Int) -> Unit) :
             ViewHolder(binding.root) {
+
+            init {
+                binding.root.setOnClickListener {
+                    adapterPosition.takeIf { it != RecyclerView.NO_POSITION }?.let { position ->
+                        onItemClick(position)
+                    }
+                }
+            }
 
             fun bind(item: PostDTO) = with(binding) {
                 post = item
